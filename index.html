@@ -26,13 +26,18 @@
              </ul>
              <div class="navbar__phones">
                  <div class='navbar__phone'>
-                    <p>ежедневно<br>
+                    <p class='navbar__time'>ежедневно<br>
                     с <b>8:00</b> до <b>20:00</b></p>
                  </div>
                  <div class='navbar__phone'>
                     <p>+7 (495) 159 67 61</p>
                     <p>+7 (495) 369 16 05</p>
                  </div>
+             </div>
+             <div class='navbar__button' onclick="showMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
              </div>
          </nav>
          <div class='header__main'>
@@ -54,6 +59,7 @@
             <div class="popularGoods__carousel carousel">
                 <button class='carousel__button carousel__prev' onclick="moveSlide(-1)"><</button>
                 <div class="carousel__content">
+                    <button class='carousel__mobilebutton button'>Подробнее</button>
                     <div class="carousel__textBlock">
                         <h3 class="carousel__price">от 9 100 Р</h3>
                         <p class="carousel__description">
@@ -69,6 +75,7 @@
                     <img class='carousel__image' src="/assets/images/one-window.png" alt="Окно">
                 </div>
                 <div class="carousel__content">
+                    <button class='carousel__mobilebutton button'>Подробнее</button>
                     <div class="carousel__textBlock">
                         <h3 class="carousel__price">от 19 100 Р</h3>
                         <p class="carousel__description">
@@ -84,6 +91,7 @@
                     <img class='carousel__image' src="/assets/images/one-window.png" alt="Окно">
                 </div>
                 <div class="carousel__content">
+                    <button class='carousel__mobilebutton button'>Подробнее</button>
                     <div class="carousel__textBlock">
                         <h3 class="carousel__price">от 29 100 Р</h3>
                         <p class="carousel__description">

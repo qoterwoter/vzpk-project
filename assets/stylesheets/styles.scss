@@ -75,6 +75,61 @@ header {
             width: 380px;
             font-size: 18px;
         }
+        .navbar__button {
+            display: none;
+            width: 50px;
+            height: 37px;
+            position: relative;
+            transform: rotate(0deg);
+            transition: .5s ease-in-out;
+            cursor: pointer;
+            span {
+                display: block;
+                position: absolute;
+                height: 5px;
+                width: 50px;
+                background: #ffffff;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+                &:nth-child(1) {
+                    top: 0px;
+                    transform-origin: left center;
+                }
+                  
+                &:nth-child(2) {
+                    top: 14px;
+                    transform-origin: left center;
+                }
+                  
+                &:nth-child(3) {
+                    top: 28px;
+                    transform-origin: left center;
+                }
+            }
+        }
+        .open {
+            span {
+                background: black;
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    top: 0px;
+                    left: 8px;
+                }
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                    left: -60px;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    top: 36px;
+                    left: 8px;
+                }
+            }
+        }
     }
     .header__main {
         display: flex;
@@ -395,6 +450,102 @@ footer {
         .main__prices {
             .prices__windows {
                 margin: 0 50px;
+            }
+        }
+    }
+}
+
+@media (max-width:1465px) {
+    header {
+        .navbar {
+            .navbar__button {
+                display: block;
+            }
+            .navbar__links {
+                top: 0;
+                right: 0;
+                display: none;
+                position: absolute;
+                background-color: rgba(238, 238, 238, 0.82);
+                width: 80%;
+                color: black;
+                font-weight: 500;
+                font-size: 50px;
+                .navbar__link_active {
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1320px) {
+    main {
+        .main__aboutUs {
+            .aboutUs__description {
+                max-width: 75%;
+            }
+        }
+        .main__prices {
+            .prices__description {
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                .prices__title {
+                    margin-bottom: 13%;
+                }
+                .button {
+                    display: none;
+                }
+            }
+            .prices__windows {
+                margin: 0;                
+                justify-content: center;
+                
+                .windows__window {
+                    display: none;
+                    max-width: 600px;
+                    width: 500px;
+                    &:first-child {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .main__popularGoods {
+            max-height: 880px;
+            height: 1000px;
+            
+            .popularGoods__carousel {
+                .carousel__content {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    .carousel__textBlock {
+                        margin-top: 40px;
+                        font-size: 20px;
+                        .carousel__price {
+                            font-size: 24px;
+                        }
+                    }
+                    .carousel__button {
+                        display: none;
+                    }
+                }
+                .carousel__mobilebutton {
+                    align-self: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:900px) {
+    header {
+        .navbar {
+            .navbar__phones {
+                justify-content: center;
+                .navbar__time {
+                    display: none;
+                }
             }
         }
     }

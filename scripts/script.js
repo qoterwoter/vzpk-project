@@ -11,3 +11,18 @@ function moveSlide(n) {
     slider.map(slide=>slide.style.display='none')
     slider[slideId].style.display='flex'
 }
+
+let show = false;
+let navbar = document.querySelector('.navbar__links');
+let button = document.querySelector('.navbar__button')
+function showMenu() {
+    show=!show;
+    if(show===true) {
+        navbar.style.display='block'
+        button.classList.add('open')
+    }
+    if(show===false) {
+        navbar.style.display='none'
+        button.classList.remove('open')
+    }
+}

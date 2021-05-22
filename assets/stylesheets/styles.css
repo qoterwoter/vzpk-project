@@ -115,6 +115,75 @@ header .navbar .navbar__phones {
   font-size: 18px;
 }
 
+header .navbar .navbar__button {
+  display: none;
+  width: 50px;
+  height: 37px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+header .navbar .navbar__button span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 50px;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+header .navbar .navbar__button span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header .navbar .navbar__button span:nth-child(2) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header .navbar .navbar__button span:nth-child(3) {
+  top: 28px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+header .navbar .open span {
+  background: black;
+}
+
+header .navbar .open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0px;
+  left: 8px;
+}
+
+header .navbar .open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  left: -60px;
+}
+
+header .navbar .open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 36px;
+  left: 8px;
+}
+
 header .header__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,6 +636,103 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__prices .prices__windows {
     margin: 0 50px;
+  }
+}
+
+@media (max-width: 1465px) {
+  header .navbar .navbar__button {
+    display: block;
+  }
+  header .navbar .navbar__links {
+    top: 0;
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.82);
+    width: 80%;
+    color: black;
+    font-weight: 500;
+    font-size: 50px;
+  }
+  header .navbar .navbar__links .navbar__link_active {
+    border-bottom: 2px solid black;
+  }
+}
+
+@media (max-width: 1320px) {
+  main .main__aboutUs .aboutUs__description {
+    max-width: 75%;
+  }
+  main .main__prices .prices__description {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .main__prices .prices__description .prices__title {
+    margin-bottom: 13%;
+  }
+  main .main__prices .prices__description .button {
+    display: none;
+  }
+  main .main__prices .prices__windows {
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main__prices .prices__windows .windows__window {
+    display: none;
+    max-width: 600px;
+    width: 500px;
+  }
+  main .main__prices .prices__windows .windows__window:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .main__popularGoods {
+    max-height: 880px;
+    height: 1000px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__price {
+    font-size: 24px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__button {
+    display: none;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__mobilebutton {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  header .navbar .navbar__phones {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar .navbar__phones .navbar__time {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
