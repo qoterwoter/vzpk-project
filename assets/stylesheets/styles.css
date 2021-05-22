@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-header {
+.header {
   background: url("/assets/images/background.png") 10%;
   background-size: cover;
   color: black;
@@ -20,7 +20,7 @@ header {
           flex-direction: column;
 }
 
-header .navbar {
+.header .navbar {
   padding: 0 29px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +40,7 @@ header .navbar {
   border-bottom: 1px solid #A1A1A1;
 }
 
-header .navbar .navbar__logo {
+.header .navbar .navbar__logo {
   background: url("/assets/images/window.png") 0 50% no-repeat;
   background-size: 98px;
   height: 111px;
@@ -54,7 +54,7 @@ header .navbar .navbar__logo {
   font-size: 18px;
 }
 
-header .navbar .navbar__links {
+.header .navbar .navbar__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +66,7 @@ header .navbar .navbar__links {
   line-height: 19px;
 }
 
-header .navbar .navbar__links .navbar__link {
+.header .navbar .navbar__links .navbar__link {
   padding: 27px 22px;
   margin: 0 8px;
   margin-top: 38px;
@@ -76,15 +76,15 @@ header .navbar .navbar__links .navbar__link {
   transition: .2s;
 }
 
-header .navbar .navbar__links .navbar__link:hover {
-  border-color: #bebebe;
+.header .navbar .navbar__links .navbar__link:hover {
+  border-color: #dadada;
 }
 
-header .navbar .navbar__links .navbar__link_active {
+.header .navbar .navbar__links .navbar__link_active {
   border-bottom: 2px solid white;
 }
 
-header .navbar .navbar__phones {
+.header .navbar .navbar__phones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ header .navbar .navbar__phones {
   font-size: 18px;
 }
 
-header .header__main {
+.header .header__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,12 +115,12 @@ header .header__main {
   height: 70%;
 }
 
-header .header__main .header__title {
+.header .header__main .header__title {
   width: 670px;
   text-align: center;
 }
 
-header .header__main .header__button {
+.header .header__main .header__button {
   margin-top: 40px;
   border: 2px solid #4985FF;
   background-color: #4985FF;
@@ -135,7 +135,43 @@ header .header__main .header__button {
   transition: .3s;
 }
 
-header .header__main .header__button:hover {
+.header .header__main .header__button:hover {
   background-color: rgba(73, 133, 255, 0);
+}
+
+.main .main__aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 634px;
+  height: 634px;
+}
+
+.main .main__aboutUs .aboutUs__title {
+  font-size: 36px;
+  margin-bottom: 101px;
+}
+
+.main .main__aboutUs .aboutUs__description {
+  margin-top: 23px;
+  text-align: justify;
+  width: 730px;
+  color: gray;
+}
+
+.main .main__stages {
+  background-image: url("/assets/images/stages.png");
+  background-size: cover;
+  height: 822px;
 }
 /*# sourceMappingURL=styles.css.map */

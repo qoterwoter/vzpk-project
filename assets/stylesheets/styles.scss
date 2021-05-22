@@ -5,7 +5,7 @@
     padding: 0;
 }
 $ancient: #4985FF;
-header {
+.header {
     background: url("/assets/images/background.png") 10%;
     background-size: cover;
     color: black;
@@ -45,7 +45,7 @@ header {
                 cursor: pointer;
                 transition: .2s;
                 &:hover {
-                    border-color: rgb(190, 190, 190);
+                    border-color: rgb(218, 218, 218);
                 }
             }
             .navbar__link_active {
@@ -88,5 +88,30 @@ header {
                 background-color: rgba($ancient,0)
             }
         }
+    }
+}
+.main {
+    .main__aboutUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 634px;
+        height: 634px;
+        .aboutUs__title {
+            font-size: 36px;
+            margin-bottom: 101px;
+        }
+        .aboutUs__description {
+            margin-top: 23px;
+            text-align: justify;
+            width: 730px;
+            color: gray;
+        }
+    }
+    .main__stages {
+        background-image: url('/assets/images/stages.png');
+        background-size: cover;
+        height: 822px;
     }
 }
