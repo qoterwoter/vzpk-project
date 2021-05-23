@@ -192,6 +192,9 @@ main {
                 display: flex;
                 width: 70%;
                 justify-content: space-around;
+                .carousel__mobilebutton {
+                    display: none;
+                }
                 .carousel__textBlock {
                     font-size: 24px;
                     font-weight: 400;
@@ -525,6 +528,9 @@ footer {
                         .carousel__price {
                             font-size: 24px;
                         }
+                    }
+                    .carousel__mobilebutton {
+                        display: block;
                     }
                     .carousel__button {
                         display: none;

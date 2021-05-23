@@ -278,6 +278,10 @@ main .main__popularGoods .popularGoods__carousel .carousel__content {
       justify-content: space-around;
 }
 
+main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__mobilebutton {
+  display: none;
+}
+
 main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock {
   font-size: 24px;
   font-weight: 400;
@@ -713,6 +717,9 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__price {
     font-size: 24px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__mobilebutton {
+    display: block;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__button {
     display: none;
