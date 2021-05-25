@@ -126,7 +126,7 @@ header {
                 }
                 &:nth-child(3) {
                     transform: rotate(-45deg);
-                    top: 36px;
+                    top: 35px;
                     left: 8px;
                 }
             }
@@ -567,8 +567,17 @@ footer {
         background-size: cover;
         .navbar {
             .navbar__links {
-                font-size: 35px;
+                display: none;
+                flex-direction: column;
+                align-items:flex-end;
+                font-size: 30px;
                 height: 100vh;
+                .navbar__link {
+                    padding: 10px 0;
+                    &:first-child {
+                        margin-top: 120px;
+                    }
+                }
             }
             .navbar__phones {
                 justify-content: center;
@@ -597,6 +606,19 @@ footer {
                 display: block;
             }
         }
+        .main__aboutUs {
+            margin-bottom: 50px;
+            .aboutUs__title {
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .main__popularGoods {
+            .popularGoods__title {
+                margin-top: 20px;
+                font-size: 35px;
+            }
+        }
     }
 }
 @media (max-width: 550px) { 
@@ -605,7 +627,7 @@ footer {
         background-size: cover;
         .navbar {
             .navbar__links {
-                font-size: 30px;
+                font-size: 24px;
             }
             .navbar__logo {
                 font-size: 16px;
@@ -716,12 +738,11 @@ footer {
 @media (max-width: 440px) {
     header {
         .navbar {
-            justify-content: center;
             .navbar__logo {
                 padding-left: 10px;
             }
             .navbar__links {
-                font-size: 25px;
+                font-size: 20px;
                 height: 100vh;
             }
             .navbar__phones {

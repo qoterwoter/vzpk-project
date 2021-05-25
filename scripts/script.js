@@ -18,7 +18,7 @@ let button = document.querySelector('.navbar__button')
 function showMenu() {
     show=!show;
     if(show===true) {
-        navbar.style.display='block'
+        navbar.style.display='flex'
         button.classList.add('open')
     }
     if(show===false) {
