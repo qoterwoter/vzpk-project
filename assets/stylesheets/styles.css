@@ -56,6 +56,8 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   max-height: 110px;
   border-bottom: 1px solid #A1A1A1;
 }
@@ -205,6 +207,7 @@ header .header__main {
 }
 
 header .header__main .header__title {
+  max-width: 670px;
   width: 670px;
   text-align: center;
 }
@@ -405,7 +408,6 @@ main .main__prices .prices__windows .windows__window {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 364px;
   -webkit-box-shadow: 4px 9px 9px rgba(0, 0, 0, 0.233);
           box-shadow: 4px 9px 9px rgba(0, 0, 0, 0.233);
 }
@@ -664,6 +666,11 @@ footer .footer__links .links__list .links__item::before {
 }
 
 @media (max-width: 1320px) {
+  header .navbar .navbar__logo {
+    position: relative;
+    left: -30px;
+    padding-left: 35px;
+  }
   main .main__aboutUs .aboutUs__description {
     max-width: 75%;
   }
@@ -740,6 +747,102 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__phones .navbar__time {
     display: none;
+  }
+  header .navbar .navbar__logo {
+    background: none;
+  }
+  header .header__main .header__title {
+    max-width: 90%;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 550px) {
+  header .navbar .navbar__logo {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  header .navbar .navbar__phones {
+    font-size: 16px;
+  }
+  header .navbar .navbar__button span {
+    height: 4px;
+    width: 45px;
+  }
+  header .navbar .open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 1px;
+    left: 8px;
+  }
+  header .navbar .open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+    left: -60px;
+  }
+  header .navbar .open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 34px;
+    left: 8px;
+  }
+  header .header__main .header__title {
+    font-size: 26px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__image {
+    height: auto;
+    max-width: 300px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__button {
+    max-width: 30px;
+  }
+  main .main__consultation .consultation__title {
+    text-align: center;
+  }
+  main .main__consultation .consultation__form {
+    max-width: 90%;
+  }
+  main .main__prices .prices__title {
+    max-width: 90%;
+  }
+  main .main__prices .prices__windows {
+    margin: 0;
+  }
+  main .main__prices .prices__windows .windows__window {
+    max-width: 75%;
+  }
+  main .main__prices .prices__windows .windows__window .window__title {
+    text-align: center;
+  }
+  main .main__prices .prices__windows .windows__window .window__description {
+    margin-left: 0 auto;
+    width: 99%;
+  }
+  main .main__prices .prices__windows .windows__window .window__description .row {
+    line-height: 16px;
+    font-size: 11px;
+    max-width: 100%;
+  }
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer__contacts .contacts__item svg {
+    display: none;
+  }
+  footer .footer__links .links__list .links__item::before {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  main .main__prices .prices__windows .windows__window {
+    max-width: 85%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -36,6 +36,7 @@ header {
         justify-content: space-between;
         line-height: 22px;
         align-items: center;
+        align-content: center;
         max-height: 110px;
         border-bottom: 1px solid #A1A1A1;
         .navbar__logo {
@@ -140,6 +141,7 @@ header {
         font-size: 24px;
         height: 70%;
         .header__title {
+            max-width: 670px;
             width: 670px;
             text-align: center;
         }
@@ -288,7 +290,6 @@ main {
                 flex-direction: column;
                 padding: 30px 13px;
                 align-items: center;
-                max-width: 364px;
                 box-shadow: 4px 9px 9px  rgba(0, 0, 0, 0.233);
                 .window__title {
                     font-size: 20px;
@@ -482,6 +483,15 @@ footer {
     }
 }
 @media (max-width:1320px) {
+    header {
+        .navbar {
+            .navbar__logo {
+                position: relative;
+                left: -30px;
+                padding-left: 35px;
+            }
+        }
+    }
     main {
         .main__aboutUs {
             .aboutUs__description {
@@ -551,6 +561,136 @@ footer {
                 justify-content: center;
                 .navbar__time {
                     display: none;
+                }
+            }
+            .navbar__logo {
+                background: none;
+            }
+        }
+        .header__main {
+            .header__title {
+                max-width: 90%;
+                font-size: 32px;
+            }
+        }
+    }
+}
+@media (max-width: 550px) { 
+    header {
+        .navbar {
+            .navbar__logo {
+                font-size: 16px;
+                padding-left: 20px;
+            }
+            .navbar__phones {
+                font-size: 16px;
+            }
+            .navbar__button {
+                span {
+                    height: 4px;
+                    width: 45px;
+                }
+            }
+            .open {
+                span{
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 1px;
+                        left: 8px;
+                    }
+                    &:nth-child(2) {
+                        width: 0%;
+                        opacity: 0;
+                        left: -60px;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 34px;
+                        left: 8px;
+                    }
+                }
+            }
+        }
+        .header__main {
+            .header__title {
+                font-size: 26px;
+            }
+        }
+    }
+    main {
+        .main__popularGoods {
+            .popularGoods__carousel {
+                .carousel__content {
+                    .carousel__image {
+                        height: auto;
+                        max-width: 300px;
+                    }
+                    .carousel__button {
+                        max-width: 30px;
+                    }
+                }
+            }
+        }
+        .main__consultation {
+            .consultation__title {
+                text-align: center;
+            }
+            .consultation__form {
+                max-width: 90%;
+            }
+        }
+        .main__prices {
+            .prices__title {
+                max-width: 90%;
+            }
+            .prices__windows {
+                margin: 0;
+                .windows__window {
+                    max-width: 75%;
+                    .window__title {
+                        text-align: center;
+                    }
+                    .window__description {
+                        margin-left: 0 auto;
+                        width: 99%;
+                        .row {
+                            line-height: 16px;
+                            font-size: 11px;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        align-items: center;
+        flex-direction: column;
+        .footer__contacts {
+            .contacts__item {
+                svg {
+                    display: none;
+                }
+            }
+        }
+        .footer__links {
+            .links__list {
+                .links__item {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+    
+    main{
+        .main__prices {
+            .prices__windows {
+                .windows__window {
+                    max-width: 85%;
                 }
             }
         }
