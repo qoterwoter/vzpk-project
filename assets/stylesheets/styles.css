@@ -241,7 +241,7 @@ main .main__aboutUs .aboutUs__description {
   color: #999999;
 }
 
-main .main__stages img {
+main .main__stages .stages__desktop {
   height: auto;
   width: 100%;
 }
@@ -650,6 +650,7 @@ footer .footer__links .links__list .links__item::before {
     display: block;
   }
   header .navbar .navbar__links {
+    height: 90vh;
     top: 0;
     right: 0;
     display: none;
@@ -660,8 +661,14 @@ footer .footer__links .links__list .links__item::before {
     font-weight: 500;
     font-size: 50px;
   }
+  header .navbar .navbar__links .navbar__link {
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+  }
+  header .navbar .navbar__links .navbar__link:hover {
+    border-bottom: 4px solid gray;
+  }
   header .navbar .navbar__links .navbar__link_active {
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
   }
 }
 
@@ -740,6 +747,14 @@ footer .footer__links .links__list .links__item::before {
 }
 
 @media (max-width: 900px) {
+  header {
+    background: url("/assets/images/background__mobile.png") 10%;
+    background-size: cover;
+  }
+  header .navbar .navbar__links {
+    font-size: 35px;
+    height: 100vh;
+  }
   header .navbar .navbar__phones {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -755,9 +770,23 @@ footer .footer__links .links__list .links__item::before {
     max-width: 90%;
     font-size: 32px;
   }
+  main .main__stages .stages__desktop {
+    display: none;
+  }
+  main .main__stages .stages__mobile {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (max-width: 550px) {
+  header {
+    background: url("/assets/images/background__mobile.png") 10%;
+    background-size: cover;
+  }
+  header .navbar .navbar__links {
+    font-size: 30px;
+  }
   header .navbar .navbar__logo {
     font-size: 16px;
     padding-left: 20px;
@@ -806,7 +835,7 @@ footer .footer__links .links__list .links__item::before {
     max-width: 90%;
   }
   main .main__prices .prices__windows {
-    margin: 0;
+    margin-top: 30px;
   }
   main .main__prices .prices__windows .windows__window {
     max-width: 75%;
@@ -841,6 +870,23 @@ footer .footer__links .links__list .links__item::before {
 }
 
 @media (max-width: 440px) {
+  header .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar .navbar__logo {
+    padding-left: 10px;
+  }
+  header .navbar .navbar__links {
+    font-size: 25px;
+    height: 100vh;
+  }
+  header .navbar .navbar__phones {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   main .main__prices .prices__windows .windows__window {
     max-width: 85%;
   }
