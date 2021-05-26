@@ -173,6 +173,9 @@ main {
             height: auto;
             width: 100%;
         }
+        .stages__mobile {
+            display: none;
+        }
     }
     .main__popularGoods {
         max-height: 797px;
@@ -470,16 +473,22 @@ footer {
                 top: 0;
                 right: 0;
                 display: none;
+                flex-direction: column;
+                align-items:flex-end;
+                height: 100vh;
                 position: absolute;
                 background-color: rgba(238, 238, 238, 0.82);
                 width: 80%;
                 color: black;
                 font-weight: 500;
-                font-size: 50px;
+                font-size: 40px;
                 .navbar__link {
                     border-bottom: 4px solid rgba(black,0);
                     &:hover {
                         border-bottom: 4px solid gray;
+                    }
+                    &:first-child {
+                        margin-top: 120px;
                     }
                 }
                 .navbar__link_active {
@@ -495,7 +504,7 @@ footer {
             .navbar__logo {
                 position: relative;
                 left: -30px;
-                padding-left: 35px;
+                padding-left: 55px;
             }
         }
     }
@@ -574,9 +583,6 @@ footer {
                 height: 100vh;
                 .navbar__link {
                     padding: 10px 0;
-                    &:first-child {
-                        margin-top: 120px;
-                    }
                 }
             }
             .navbar__phones {

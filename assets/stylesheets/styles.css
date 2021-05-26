@@ -246,6 +246,10 @@ main .main__stages .stages__desktop {
   width: 100%;
 }
 
+main .main__stages .stages__mobile {
+  display: none;
+}
+
 main .main__popularGoods {
   max-height: 797px;
   height: 800px;
@@ -654,18 +658,29 @@ footer .footer__links .links__list .links__item::before {
     top: 0;
     right: 0;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 100vh;
     position: absolute;
     background-color: rgba(238, 238, 238, 0.82);
     width: 80%;
     color: black;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
   }
   header .navbar .navbar__links .navbar__link {
     border-bottom: 4px solid rgba(0, 0, 0, 0);
   }
   header .navbar .navbar__links .navbar__link:hover {
     border-bottom: 4px solid gray;
+  }
+  header .navbar .navbar__links .navbar__link:first-child {
+    margin-top: 120px;
   }
   header .navbar .navbar__links .navbar__link_active {
     border-bottom: 4px solid black;
@@ -676,7 +691,7 @@ footer .footer__links .links__list .links__item::before {
   header .navbar .navbar__logo {
     position: relative;
     left: -30px;
-    padding-left: 35px;
+    padding-left: 55px;
   }
   main .main__aboutUs .aboutUs__description {
     max-width: 75%;
@@ -765,9 +780,6 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__links .navbar__link {
     padding: 10px 0;
-  }
-  header .navbar .navbar__links .navbar__link:first-child {
-    margin-top: 120px;
   }
   header .navbar .navbar__phones {
     -webkit-box-pack: center;
