@@ -64,6 +64,10 @@ header {
                 &:hover {
                 border-color: rgb(218, 218, 218);
                 }
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
             .navbar__link_active {
                 border-bottom: 2px solid white;
@@ -149,6 +153,7 @@ header {
     }
 }
 main {
+    // Основная страница
     .main__aboutUs {
         display: flex;
         flex-direction: column;
@@ -388,6 +393,133 @@ main {
                 &:hover {
                     color: $ancient;
                 }
+            }
+        }
+    }
+    // Страница каталога
+    .main__windows {
+        $red:#F54646;
+        display: flex;
+        flex-direction: column;
+        .windows__window {
+            .window__header {
+                display: flex;
+                justify-content: center;
+                .window__title {
+                    padding: 40px 0;
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                .window__price {
+                    top:auto;
+                    font-size: 24px;
+                    padding: 30px 0;
+                    text-align: center;
+                    position: absolute;
+                    right: 110px;
+                    background-color: $red;
+                    color: white;
+                    z-index: 10;
+                    width: 200px;
+                    max-width: 200px;
+                    max-height: 100px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 89px;
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-top: 60px solid $red;
+                    }
+                }
+            }
+            .window__main {
+                padding: 0 220px;
+                display: flex;
+                justify-content: space-between;
+                .window__images {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .window__image {
+                        width: 453px;
+                    }
+                    .window__textures {
+                        img {
+                            width: 300px;
+                        }
+                    }
+                }
+                .window__about {
+                    padding-top: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .window__description {
+                        font-size: 18px;
+                        text-indent: 40px;
+                        max-width: 840px;
+                    }
+                    .window__props {
+                        margin-top: 60px;
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 140%;
+                        .window__property {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .property__image {
+                                width: 120px;
+                            }
+                            .property__title {
+                                padding-top: 30px;
+                                font-size: 13px;
+                                font-weight: 600;
+                            }
+                            .property__description {
+                                padding-top: 20px;
+                                text-align: center;
+                                font-size: 13px;
+                                max-width: 250px;
+                                
+                            
+                            }
+                            &:nth-child(1) {
+                                max-width: 190px;
+                            }
+                            &:nth-child(2) {
+                                max-width: 205px;
+                            }
+                        }
+                    }
+                    .window__actions {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 61%;
+                        .window__button {
+                            margin-bottom: 20px;
+                        }
+                        .button__buy {
+                            background-color: transparent;
+                            color: black;
+                            &:hover {
+                                color:$ancient;
+                                background-color: $ancient;
+                                color: white;
+                            }
+                        }
+                        .button__price {
+                            max-width: 230px;
+                            width: 400px;
+                            &:hover {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
