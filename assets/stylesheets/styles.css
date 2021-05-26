@@ -187,7 +187,7 @@ header .navbar .open span:nth-child(2) {
 header .navbar .open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 35px;
+  top: 36px;
   left: 8px;
 }
 
@@ -212,9 +212,21 @@ header .header__main {
 }
 
 header .header__main .header__title {
+  font-weight: 600;
   max-width: 670px;
   width: 670px;
   text-align: center;
+}
+
+header .header__main .header__subtitle {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 230px;
+}
+
+header .header__main .catalog__button {
+  max-width: 230px;
+  width: 500px;
 }
 
 main .main__aboutUs {
@@ -641,7 +653,7 @@ main .main__windows .windows__window .window__header .window__price::after {
 }
 
 main .main__windows .windows__window .window__main {
-  padding: 0 220px;
+  padding: 0 9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +681,10 @@ main .main__windows .windows__window .window__main .window__images .window__imag
 
 main .main__windows .windows__window .window__main .window__images .window__textures img {
   width: 300px;
+}
+
+main .main__windows .windows__window .window__main .window__textures_mobile {
+  display: none;
 }
 
 main .main__windows .windows__window .window__main .window__about {
@@ -740,7 +756,7 @@ main .main__windows .windows__window .window__main .window__about .window__props
   max-width: 205px;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,27 +766,59 @@ main .main__windows .windows__window .window__main .window__about .window__actio
   max-width: 61%;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions .window__button {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop .window__button {
   margin-bottom: 20px;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions .button__buy {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop .button__buy {
   background-color: transparent;
   color: black;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions .button__buy:hover {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop .button__buy:hover {
   color: #4985FF;
   background-color: #4985FF;
   color: white;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions .button__price {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop .button__price {
   max-width: 230px;
   width: 400px;
 }
 
-main .main__windows .windows__window .window__main .window__about .window__actions .button__price:hover {
+main .main__windows .windows__window .window__main .window__about .window__actions_desktop .button__price:hover {
+  color: black;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 61%;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile .window__button {
+  margin-bottom: 20px;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile .button__buy {
+  background-color: transparent;
+  color: black;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile .button__buy:hover {
+  color: #4985FF;
+  background-color: #4985FF;
+  color: white;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile .button__price {
+  max-width: 230px;
+  width: 400px;
+}
+
+main .main__windows .windows__window .window__main .window__actions_mobile .button__price:hover {
   color: black;
 }
 
@@ -836,6 +884,12 @@ footer .footer__links .links__list .links__item::before {
   main .main__prices .prices__windows {
     margin: 0 50px;
   }
+  main .main__windows .windows__window .window__header .window__title {
+    margin-right: 4%;
+  }
+  main .main__windows .windows__window .window__price {
+    right: 40px !important;
+  }
 }
 
 @media (max-width: 1465px) {
@@ -865,6 +919,9 @@ footer .footer__links .links__list .links__item::before {
   header .navbar .navbar__links .navbar__link {
     border-bottom: 4px solid rgba(0, 0, 0, 0);
   }
+  header .navbar .navbar__links .navbar__link a {
+    color: black;
+  }
   header .navbar .navbar__links .navbar__link:hover {
     border-bottom: 4px solid gray;
   }
@@ -873,6 +930,15 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__links .navbar__link_active {
     border-bottom: 4px solid black;
+  }
+  main .main__windows .windows__window .window__header .window__title {
+    margin-right: 15%;
+  }
+  main .main__windows .windows__window .window__price {
+    right: 20px !important;
+  }
+  main .main__windows .windows__window .window__main {
+    padding: 0 4%;
   }
 }
 
@@ -948,6 +1014,16 @@ footer .footer__links .links__list .links__item::before {
         align-self: center;
     margin-bottom: 20px;
   }
+  main .main__windows .windows__window .window__header .window__title {
+    max-width: 80%;
+  }
+  main .main__windows .windows__window .window__main {
+    padding: 0;
+    margin: 0 3%;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1002,6 +1078,65 @@ footer .footer__links .links__list .links__item::before {
   main .main__popularGoods .popularGoods__title {
     margin-top: 20px;
     font-size: 35px;
+  }
+  main .main__windows .windows__window .window__header .window__title {
+    max-width: 70%;
+  }
+  main .main__windows .windows__window .window__header .window__price {
+    right: 0 !important;
+  }
+  main .main__windows .windows__window .window__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__textures_desktop {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__image {
+    width: 350px !important;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile {
+    margin: 0 auto;
+    display: block;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile img {
+    height: 110px;
+  }
+  main .main__windows .windows__window .window__main .window__about {
+    padding-top: 0;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__description {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__image {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__title:nth-child(1) {
+    padding-top: 100px !important;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile {
+    max-width: 60%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 }
 
