@@ -503,6 +503,7 @@ main .main__consultation {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 75px;
+  background-color: #F6F6F8;
 }
 
 main .main__consultation .consultation__title {
@@ -640,6 +641,7 @@ main .main__windows .windows__window .window__header .window__price {
   width: 200px;
   max-width: 200px;
   max-height: 100px;
+  font-weight: 500;
 }
 
 main .main__windows .windows__window .window__header .window__price::after {
@@ -986,6 +988,42 @@ footer .footer__links .links__list .links__item::before {
     max-height: 880px;
     height: 1000px;
   }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__price {
+    font-size: 24px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__mobilebutton {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  main .main__windows .windows__window .window__header .window__title {
+    max-width: 80%;
+  }
+  main .main__windows .windows__window .window__main {
+    padding: 0;
+    margin: 0 3%;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1020px) {
+  main .main__windows .windows__window .window__header .window__title {
+    font-size: 40px;
+  }
+  main .main__popularGoods {
+    max-height: 880px;
+    height: 1000px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__button {
+    margin-bottom: 180px;
+  }
   main .main__popularGoods .popularGoods__carousel .carousel__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1013,16 +1051,6 @@ footer .footer__links .links__list .links__item::before {
         -ms-grid-row-align: center;
         align-self: center;
     margin-bottom: 20px;
-  }
-  main .main__windows .windows__window .window__header .window__title {
-    max-width: 80%;
-  }
-  main .main__windows .windows__window .window__main {
-    padding: 0;
-    margin: 0 3%;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
-    max-width: 100%;
   }
 }
 
@@ -1131,12 +1159,55 @@ footer .footer__links .links__list .links__item::before {
     display: none;
   }
   main .main__windows .windows__window .window__main .window__actions_mobile {
-    max-width: 60%;
+    max-width: 90%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  main .main__windows .windows__window .window__header .window__title {
+    padding-right: 120px;
+    padding-left: 55px;
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 30px;
+  }
+  main .main__windows .windows__window .window__header .window__price {
+    max-width: 120px;
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+  main .main__windows .windows__window .window__header .window__price::after {
+    top: 52px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 30px solid #F54646;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__image {
+    max-width: 240px;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile img {
+    height: auto;
+    max-width: 340px;
+  }
+  main .main__popularGoods {
+    max-height: 700px;
+  }
+  main .main__popularGoods .carousel__textBlock .carousel__list,
+  main .main__popularGoods .carousel__textBlock .carousel__description {
+    font-size: 14px;
+  }
+  main .main__popularGoods .carousel__textBlock .carousel__price {
+    font-size: 18px !important;
+  }
+  main .main__popularGoods .carousel__image {
+    height: auto !important;
+    width: 320px !important;
   }
 }
 
@@ -1179,12 +1250,37 @@ footer .footer__links .links__list .links__item::before {
   header .header__main .header__title {
     font-size: 26px;
   }
+  header .header__main .header__subtitle {
+    font-size: 18px;
+  }
+  main .main__popularGoods {
+    max-height: 620px;
+  }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__image {
     height: auto;
-    max-width: 300px;
+    max-width: 223px;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__button {
     max-width: 30px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock {
+    margin-top: 80px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__price {
+    font-size: 12px !important;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__description {
+    text-indent: 14px !important;
+    width: 277px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__description,
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__list {
+    font-size: 11px;
+  }
+  main .main__popularGoods .popularGoods__carousel .carousel__button {
+    font-size: 15px;
+    max-width: 40px;
+    max-height: 40px;
   }
   main .main__consultation .consultation__title {
     text-align: center;
@@ -1213,6 +1309,37 @@ footer .footer__links .links__list .links__item::before {
     font-size: 11px;
     max-width: 100%;
   }
+  main .main__windows .windows__window .window__header .window__title {
+    font-size: 28px;
+    padding-left: 20px;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__image {
+    max-width: 220px;
+    margin-left: -10px;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props {
+    width: 110%;
+    margin-left: -20px;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__title {
+    padding-top: 10px;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__description {
+    max-width: 203px;
+    padding-top: 5px;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile img {
+    max-width: 250px;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile {
+    max-width: 100%;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile .window__button {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 12px 30px;
+  }
   footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1232,6 +1359,7 @@ footer .footer__links .links__list .links__item::before {
 
 @media (max-width: 440px) {
   header .navbar .navbar__logo {
+    font-size: 14px;
     padding-left: 10px;
   }
   header .navbar .navbar__links {
@@ -1242,9 +1370,34 @@ footer .footer__links .links__list .links__item::before {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    font-size: 14px;
   }
   main .main__prices .prices__windows .windows__window {
     max-width: 85%;
+  }
+  main .main__windows .windows__window .window__header .window__title {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__image {
+    max-width: 180px;
+    margin-left: -10px;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__title {
+    font-size: 12px;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__description {
+    font-size: 10px;
+    max-width: 180px;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile {
+    max-width: 100%;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile .window__button {
+    padding: 0;
+    height: 33px;
+    max-width: 120px;
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
