@@ -824,6 +824,71 @@ main .main__windows .windows__window .window__main .window__actions_mobile .butt
   color: black;
 }
 
+main .main__windows .windows__window > .window__about {
+  margin: 0 auto;
+  margin-top: 10%;
+  max-width: 1230px;
+  width: 1500px;
+  padding: 60px 135px;
+  border: 2px solid #151435;
+}
+
+main .main__windows .windows__window > .window__about .about__title {
+  font-size: 36px;
+  position: relative;
+  top: -95px;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  max-width: 322px;
+  background: linear-gradient(180.33deg, #141334 49.55%, #260C3A 99.78%), #C4C4C4;
+  border-radius: 20px;
+}
+
+main .main__windows .windows__window > .window__about .about__list {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+main .main__questions {
+  background-image: url("/assets/images/products__qustions.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-height: 230px;
+  height: 230px;
+  color: white;
+}
+
+main .main__questions .questions__titles .titles__title {
+  padding: 15px;
+  font-weight: 300;
+}
+
+main .main__questions .questions__button {
+  width: 400px;
+  max-width: 400px;
+  font-size: 24px;
+  margin: 0;
+  border: 2px solid white;
+}
+
+main .main__questions .questions__phone {
+  width: 400px;
+  max-width: 300px;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 100px;
+  background: #151435;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1227,13 +1292,19 @@ footer .footer__links .links__list .links__item::before {
     font-size: 16px;
   }
   header .navbar .navbar__button span {
-    height: 4px;
-    width: 45px;
+    height: 3px;
+    width: 40px;
+  }
+  header .navbar .navbar__button span:nth-child(2) {
+    top: 12px;
+  }
+  header .navbar .navbar__button span:nth-child(3) {
+    top: 24px;
   }
   header .navbar .open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: 1px;
+    top: 0px;
     left: 8px;
   }
   header .navbar .open span:nth-child(2) {
@@ -1244,7 +1315,7 @@ footer .footer__links .links__list .links__item::before {
   header .navbar .open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    top: 34px;
+    top: 29px;
     left: 8px;
   }
   header .header__main .header__title {
