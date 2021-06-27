@@ -274,7 +274,6 @@ main .main__popularGoods {
 }
 
 main .main__popularGoods .popularGoods__title {
-  margin-top: 2%;
   padding-top: 1%;
   color: #323232;
   font-size: 48px;
@@ -614,6 +613,7 @@ main .main__windows {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 40px;
 }
 
 main .main__windows .windows__window .window__header {
