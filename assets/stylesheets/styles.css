@@ -270,10 +270,12 @@ main .main__stages .stages__mobile {
 main .main__popularGoods {
   max-height: 797px;
   height: 800px;
+  background: #f3f3f3;
 }
 
 main .main__popularGoods .popularGoods__title {
   margin-top: 2%;
+  padding-top: 1%;
   color: #323232;
   font-size: 48px;
   text-align: center;
@@ -923,6 +925,116 @@ main .main__contacts .contacts__table .table__row .cell__title {
 
 main .main__contacts .contacts__table .table__row .cell_description {
   text-align: center;
+}
+
+main .main__articles {
+  margin: 0 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .main__articles .articles__title {
+  margin: 30px 0 60px 0;
+  display: inline-block;
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 600;
+}
+
+main .main__articles .articles__switcher {
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  width: 630px;
+  max-width: 590px;
+  background: linear-gradient(180.33deg, #141334 49.55%, #260C3A 99.78%), #C4C4C4;
+  font-size: 24px;
+}
+
+main .main__articles .articles__switcher .switch__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main .main__articles .articles__switcher .switch__item:nth-child(1) {
+  margin-top: 20px;
+}
+
+main .main__articles .articles__switcher .switch__item .switch__number {
+  position: relative;
+  z-index: 2;
+  padding: 9px 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 28px;
+  max-width: 40px;
+  font-weight: 500;
+  background-color: #151435;
+}
+
+main .main__articles .articles__switcher .switch__item .switch {
+  position: relative;
+  z-index: 1;
+  left: -25px;
+  padding: 30px 0;
+  padding-left: 55px;
+  border-left: 1px solid white;
+}
+
+main .main__articles .articles__switcher .switch__item_current {
+  border-radius: 15px;
+  position: relative;
+  background: #5290F8;
+  width: 26em;
+  left: -30px;
+  padding-left: 28px;
+  border: 2px solid white;
+  max-width: none;
+}
+
+main .main__articles .articles__article {
+  max-width: 930px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__articles .articles__article .article__title {
+  margin: 20px 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+main .main__articles .articles__article .article__description {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+main .main__articles .articles__article .article__image {
+  margin: 30px 0 15px 0;
+  max-height: 400px;
 }
 
 footer {
