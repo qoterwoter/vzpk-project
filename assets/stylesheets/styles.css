@@ -89,25 +89,25 @@ header .navbar .navbar__links {
 }
 
 header .navbar .navbar__links .navbar__link {
-  padding: 27px 22px;
   margin: 0 8px;
   margin-top: 38px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
   cursor: pointer;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-header .navbar .navbar__links .navbar__link:hover {
-  border-color: #dadada;
-}
-
 header .navbar .navbar__links .navbar__link a {
   color: white;
+  padding: 26px 22px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
   text-decoration: none;
 }
 
-header .navbar .navbar__links .navbar__link_active {
+header .navbar .navbar__links .navbar__link a:hover {
+  border-color: #dadada;
+}
+
+header .navbar .navbar__links .navbar__link_active a {
   border-bottom: 2px solid white;
 }
 
@@ -933,7 +933,7 @@ main .main__contacts .contacts__table .table__row .cell_description {
 }
 
 main .main__articles {
-  margin: 0 106px;
+  margin: 50px 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,7 +948,7 @@ main .main__articles {
 }
 
 main .main__articles .articles__title {
-  margin: 30px 0 60px 0;
+  margin-bottom: 60px;
   display: inline-block;
   width: 100%;
   font-size: 48px;

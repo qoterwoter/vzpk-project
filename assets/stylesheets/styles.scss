@@ -55,22 +55,24 @@ header {
             margin-left: 15%;
             line-height: 19px;
             .navbar__link {
-                padding:  27px 22px;
                 margin: 0 8px;
                 margin-top: 38px;
-                border-bottom: 2px solid rgba(0,0,0,0);
                 cursor: pointer;
                 transition: .2s;
-                &:hover {
-                border-color: rgb(218, 218, 218);
-                }
                 a {
                     color: white;
+                    padding:  26px 22px;
+                    border-bottom: 2px solid rgba(0,0,0,0);
                     text-decoration: none;
+                    &:hover {
+                        border-color: rgb(218, 218, 218);
+                    }
                 }
             }
             .navbar__link_active {
-                border-bottom: 2px solid white;
+                a {
+                    border-bottom: 2px solid white;
+                }
             }
         }
         .navbar__phones {
@@ -650,13 +652,13 @@ main {
     }
     // Страница статей
     .main__articles {
-        margin: 0 106px;
+        margin: 50px 106px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         .articles__title {
-            margin:30px 0 60px 0;
+            margin-bottom: 60px;
             display: inline-block;
             width: 100%;
             font-size: 48px;
