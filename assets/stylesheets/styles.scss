@@ -353,6 +353,7 @@ main {
         }
     }
     .main__consultation {
+        padding-top: 30px;
         $shadow_color: rgba(0, 0, 0, 0.342);
         display: flex;
         flex-direction: column;
@@ -613,6 +614,32 @@ main {
             padding: 12px 30px; 
             border-radius: 100px;
             background: #151435;
+        }
+    }
+    // Страница контактов
+    .main__contacts {
+        padding: 20px;
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        .contacts__title {
+            text-align: center;
+            margin: 10px;
+            font-size: 48px;
+        }
+        .contacts__table {
+            font-size: 20px;
+            border-spacing: 40px;
+            max-width: 50%;
+            .table__row {
+                .cell__title {
+                    vertical-align: top;
+                    width: 150px;
+                }
+                .cell_description {
+                    text-align: center;
+                }
+            }
         }
     }
 }

@@ -492,6 +492,7 @@ main .main__prices .prices__windows .windows__window .button:hover {
 }
 
 main .main__consultation {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -887,6 +888,41 @@ main .main__questions .questions__phone {
   padding: 12px 30px;
   border-radius: 100px;
   background: #151435;
+}
+
+main .main__contacts {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__contacts .contacts__title {
+  text-align: center;
+  margin: 10px;
+  font-size: 48px;
+}
+
+main .main__contacts .contacts__table {
+  font-size: 20px;
+  border-spacing: 40px;
+  max-width: 50%;
+}
+
+main .main__contacts .contacts__table .table__row .cell__title {
+  vertical-align: top;
+  width: 150px;
+}
+
+main .main__contacts .contacts__table .table__row .cell_description {
+  text-align: center;
 }
 
 footer {
