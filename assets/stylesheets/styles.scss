@@ -80,6 +80,10 @@ header {
             justify-content: space-around;
             width: 380px;
             font-size: 18px;
+            a {
+                color: white;
+                text-decoration: none;
+            }
         }
         .navbar__button {
             display: none;
@@ -616,10 +620,13 @@ main {
             font-size: 24px;
             margin: 0;
             border: 2px solid white;
+            &:hover {
+                background: #151435;
+            }
         }
         .questions__phone {
-            max-width: 300px;
-            padding: 12px 0 12px 90px; 
+            max-width: fit-content;
+            padding: 12px 0 12px 100px; 
             border-radius: 100px;
             background: #151435;
             color: white;
@@ -781,8 +788,14 @@ footer {
     }
     .footer__contacts {
         .contacts__list {
-            color: #999999;
             list-style-type: none;
+            a {
+                text-decoration: none;
+                color: #999999;
+                &:hover {
+                    color: #31e0ff;
+                }
+            }
         }
     }
     .footer__links {
