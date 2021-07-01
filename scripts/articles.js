@@ -59,8 +59,11 @@ for (let i = 0; i < articles.length; i++) {
 }
 
 for (let i = 0;i < switchItem.length; i++) {
-    switchItem[i].children[0].innerHTML = i<9 ? `0${i+1}` : i+1
-    switchItem[i].onclick= function() { changeConent(i+1) }
+    let span = document.createElement('span');
+    span.className = 'switch__number'
+    span.innerHTML = i<9 ? `0${i+1}` : i+1;
+    switchItem[i].prepend(span);
+    switchItem[i].onclick= function() { changeConent(i+1) };
 }
 
 articles[0].style.display='flex'
