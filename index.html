@@ -155,7 +155,7 @@
                             <span class='row__value'>шум</span>
                         </li>
                     </ul>
-                    <button class='button'>Подробнее</button>
+                    <a class='button'>Подробнее</a>
                 </article>
                 <article class='windows__window window'>
                     <h3 class='window__title'>Двухстворчатое окно (1,82м2)</h3>
@@ -197,7 +197,7 @@
                             <span class='row__value'>шум</span>
                         </li>
                     </ul>
-                    <button class='button'>Подробнее</button>
+                    <a class='button'>Подробнее</a>
                 </article>
                 <article class='windows__window window'>
                     <h3 class='window__title'>Двухстворчатое окно (1,82м2)</h3>
@@ -239,15 +239,15 @@
                             <span class='row__value'>шум</span>
                         </li>
                     </ul>
-                    <button class='button'>Подробнее</button>
+                    <a class='button'>Подробнее</a>
                 </article>
             </section>
         </div>
         <div class="main__consultation consultation">
             <h2 class="consultation__title">Бесплатная консультация</h2>
-            <form class="consultation__form" action="">
-                <input class='consultation__input' type="email" placeholder="E-mail">
-                <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.."></textarea>
+            <form class="consultation__form" onsubmit="showResponse()">
+                <input class='consultation__input' type="email" placeholder="E-mail" required>
+                <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.." required></textarea>
                 <input class='button' type="submit" value="Отправить"> 
             </form>
         </div>
@@ -313,5 +313,6 @@
         </div>
     </footer>
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/contactForm.js"></script>
  </body>
  </html>

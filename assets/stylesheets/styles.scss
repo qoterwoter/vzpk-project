@@ -6,6 +6,10 @@
 }
 $ancient: #4985FF;
 .button {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
     margin-top: 40px;
     border: 2px solid $ancient;
     background-color: $ancient;
@@ -800,6 +804,7 @@ footer {
         max-width: 30%;
         .contacts__list {
             list-style-type: none;
+            color: #999999;
             a {
                 text-decoration: none;
                 color: #999999;
