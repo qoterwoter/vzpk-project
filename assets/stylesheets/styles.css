@@ -787,6 +787,8 @@ main .main__windows .windows__window .window__main .window__about .window__actio
 
 main .main__windows .windows__window .window__main .window__about .window__actions_desktop .window__button {
   margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
 main .main__windows .windows__window .window__main .window__about .window__actions_desktop .button__buy {
@@ -819,6 +821,8 @@ main .main__windows .windows__window .window__main .window__actions_mobile {
 
 main .main__windows .windows__window .window__main .window__actions_mobile .window__button {
   margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
 main .main__windows .windows__window .window__main .window__actions_mobile .button__buy {
