@@ -791,6 +791,7 @@ footer {
         }
     }
     .footer__contacts {
+        max-width: 30%;
         .contacts__list {
             list-style-type: none;
             a {
@@ -803,6 +804,7 @@ footer {
         }
     }
     .footer__links {
+        max-width: 30%;
         .links__list {
             color: #999999;
             list-style-type: none;

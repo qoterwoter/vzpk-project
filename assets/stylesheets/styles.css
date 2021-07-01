@@ -1134,6 +1134,10 @@ footer .footer__list .list__item svg {
   margin-right: 15px;
 }
 
+footer .footer__contacts {
+  max-width: 30%;
+}
+
 footer .footer__contacts .contacts__list {
   list-style-type: none;
 }
@@ -1145,6 +1149,10 @@ footer .footer__contacts .contacts__list a {
 
 footer .footer__contacts .contacts__list a:hover {
   color: #31e0ff;
+}
+
+footer .footer__links {
+  max-width: 30%;
 }
 
 footer .footer__links .links__list {
