@@ -1,5 +1,4 @@
 function changePage(n) {
-    console.log(n)
     let button = [...document.getElementsByClassName('buttons__button')];
     newN=(n-1)*5
     for (let i = 0; i<newN;i++) {
@@ -15,7 +14,6 @@ function changePage(n) {
     update(newN);
 }
 function changeConent(n) {
-    console.log(n)
     for(let i = 0; i < switchItem.length;i++) {
         switchItem[i].classList.remove('switch__item_current');
     }
@@ -59,4 +57,10 @@ update()
 for (let i = 0; i < articles.length; i++) {
     articles[i].style.display='none'
 }
+
+for (let i = 0;i < switchItem.length; i++) {
+    switchItem[i].children[0].innerHTML = i<9 ? `0${i+1}` : i+1
+    switchItem[i].onclick= function() { changeConent(i+1) }
+}
+
 articles[0].style.display='flex'
