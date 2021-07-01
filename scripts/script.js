@@ -17,6 +17,7 @@ function showMenu() {
     }
 }
 
+
 let slider = [...document.getElementsByClassName('carousel__content')];
 if(slider.length!==0) {
     for (let i = 0; i < slider.length; i++) {

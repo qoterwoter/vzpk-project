@@ -11,7 +11,7 @@
     <header class="header">
     <nav class="header__navbar navbar">
         <div class="navbar__logo">
-            <p class="navbar__title"><b>В</b>олгоградский<br>
+            <p class="navbar__title"><b>В</b>олжский<br>
             <b>З</b>авод<br>
             <b>П</b>ластиковых<br>
             <b>К</b>онструкций</p>
@@ -50,30 +50,73 @@
             <h2 class='articles__title'>Важно знать</h2>
             <div class="articles__switcher">
                 <ul class="switcher__content">
-                    <li class='switch__item switch__item_current'>
+                    <li class='switch__item switch__item_current' onclick='changeConent(1)'>
                         <span class='switch__number'>01</span>
                         <a class="switch">Современные профили</a>
                     </li>
-                    <li class='switch__item'>
+                    <li class='switch__item' onclick='changeConent(2)'>
                         <span class='switch__number'>02</span>
                         <a class="switch">Ещё Современные профили</a>
                     </li>
-                    <li class='switch__item'>
+                    <li class='switch__item' onclick='changeConent(3)'>
                         <span class='switch__number'>03</span>
                         <a class="switch">Новые Современные профили</a>
                     </li>
-                    <li class='switch__item'>
+                    <li class='switch__item' onclick='changeConent(4)'>
                         <span class='switch__number'>04</span>
                         <a class="switch">Не Современные профили</a>
                     </li>
-                    <li class='switch__item'>
+                    <li class='switch__item' onclick='changeConent(5)'>
                         <span class='switch__number'>05</span>
                         <a class="switch">Профили</a>
                     </li>
-                </г>
+                    <li class='switch__item' onclick='changeConent(6)'>
+                        <span class='switch__number'>06</span>
+                        <a class="switch">Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(7)'>
+                        <span class='switch__number'>07</span>
+                        <a class="switch">Ещё Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(8)'>
+                        <span class='switch__number'>08</span>
+                        <a class="switch">Новые Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(9)'>
+                        <span class='switch__number'>09</span>
+                        <a class="switch">Не Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(10)'>
+                        <span class='switch__number'>10</span>
+                        <a class="switch">Профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(11)'>
+                        <span class='switch__number'>11</span>
+                        <a class="switch">Профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(12)'>
+                        <span class='switch__number'>12</span>
+                        <a class="switch">Ещё Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(13)'>
+                        <span class='switch__number'>13</span>
+                        <a class="switch">Новые Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(14)'>
+                        <span class='switch__number'>14</span>
+                        <a class="switch">Не Современные профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(15)'>
+                        <span class='switch__number'>15</span>
+                        <a class="switch">Профили</a>
+                    </li>
+                    <li class='switch__item' onclick='changeConent(16)'>
+                        <span class='switch__number'>16</span>
+                        <a class="switch">Профили</a>
+                    </li>
+                </ul>
                 <div class="switcher__buttons">
-                    <p class="buttons_button">01</p>
-                    <p class="buttons_button">02</p>
+                    <p class="buttons__button buttons__button_current" onclick="changePage(1)">01</p>
                 </div>
             </div>
             <article class="articles__article">
@@ -209,6 +252,7 @@
         </div>
     </footer>
     <script src="../../scripts/script.js"></script>
+    <script src="/scripts/articles.js"></script>
 </body>
 </html>
 

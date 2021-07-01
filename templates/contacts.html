@@ -11,7 +11,7 @@
     <header class="header">
     <nav class="header__navbar navbar">
         <div class="navbar__logo">
-            <p class="navbar__title"><b>В</b>олгоградский<br>
+            <p class="navbar__title"><b>В</b>олжский<br>
             <b>З</b>авод<br>
             <b>П</b>ластиковых<br>
             <b>К</b>онструкций</p>
@@ -90,13 +90,13 @@
                 <h2 class="titles__title">Остались вопросы? Мы вам перезвоним!</h2>
                 <h2 class="titles__title">Расчет стоимости в течение 15 минут</h2>
             </div>
-            <input class="questions__button questions__phone" type="text" placeholder="+7 (___) ___-__-__">
+            <input class="questions__button questions__phone" id='phone' type="text" placeholder="8 (___) ___-____" required>
             <input class="questions__button button" type="submit" placeholder="Отправить">
         </div>
         <div class="main__consultation consultation">
             <h2 class="consultation__title">Бесплатная консультация</h2>
             <form class="consultation__form" action="">
-                <input class='consultation__input' type="email" placeholder="E-mail">
+                <input class='consultation__input' type="email" placeholder="E-mail" >
                 <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.."></textarea>
                 <input class='button' type="submit" value="Отправить"> 
             </form>
@@ -162,7 +162,8 @@
             </ul>
         </div>
     </footer>
-    <script src="../scripts/script.js"></script>
+    <script src="/scripts/phoneMask.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
 

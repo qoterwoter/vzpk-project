@@ -299,13 +299,13 @@ main .main__popularGoods .popularGoods__carousel {
 }
 
 main .main__popularGoods .popularGoods__carousel .carousel__content {
-  border-bottom: 1px solid #dddddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__mobilebutton {
@@ -407,6 +407,11 @@ main .main__prices .prices__description .prices__title {
 
 main .main__prices .prices__description .button {
   margin: 0;
+}
+
+main .main__prices .prices__description .price__button {
+  text-align: center;
+  text-decoration: none;
 }
 
 main .main__prices .prices__windows {
@@ -860,7 +865,7 @@ main .main__windows .windows__window > .window__about .about__list {
 
 main .main__questions {
   background-image: url("/assets/images/products__qustions.jpg");
-  background-size: cover;
+  background-size: 123em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -889,12 +894,11 @@ main .main__questions .questions__button {
 }
 
 main .main__questions .questions__phone {
-  width: 400px;
   max-width: 300px;
-  text-align: center;
-  padding: 12px 30px;
+  padding: 12px 0 12px 90px;
   border-radius: 100px;
   background: #151435;
+  color: white;
 }
 
 main .main__contacts {
@@ -920,7 +924,7 @@ main .main__contacts .contacts__title {
 main .main__contacts .contacts__table {
   font-size: 20px;
   border-spacing: 40px;
-  max-width: 50%;
+  max-width: 1000px;
 }
 
 main .main__contacts .contacts__table .table__row .cell__title {
@@ -1010,6 +1014,39 @@ main .main__articles .articles__switcher .switch__item_current {
   padding-left: 28px;
   border: 2px solid white;
   max-width: none;
+}
+
+main .main__articles .articles__switcher .switcher__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main__articles .articles__switcher .switcher__buttons .buttons__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0 5px;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  background-color: #151435;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+main .main__articles .articles__switcher .switcher__buttons .buttons__button_current {
+  background-color: #4985FF;
 }
 
 main .main__articles .articles__article {
@@ -1137,18 +1174,21 @@ footer .footer__links .links__list .links__item::before {
     font-size: 40px;
   }
   header .navbar .navbar__links .navbar__link {
-    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    padding: 15px 0;
   }
   header .navbar .navbar__links .navbar__link a {
+    padding: 15px 0;
+    margin: 0 30px;
     color: black;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
   }
-  header .navbar .navbar__links .navbar__link:hover {
+  header .navbar .navbar__links .navbar__link a:hover {
     border-bottom: 4px solid gray;
   }
   header .navbar .navbar__links .navbar__link:first-child {
     margin-top: 120px;
   }
-  header .navbar .navbar__links .navbar__link_active {
+  header .navbar .navbar__links .navbar__link_active a {
     border-bottom: 4px solid black;
   }
   main .main__windows .windows__window .window__header .window__title {
@@ -1159,6 +1199,24 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__main {
     padding: 0 4%;
+  }
+}
+
+@media (max-width: 1340px) {
+  main .main__questions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+    max-height: 450px;
+    background: linear-gradient(180.33deg, #141334 49.55%, #260C3A 99.78%), #C4C4C4;
+  }
+  main .main__questions .questions__titles > .titles__title:first-child {
+    border-bottom: 1px solid white;
+  }
+  main .main__questions .button {
+    max-width: 240px !important;
   }
 }
 
@@ -1291,6 +1349,15 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__links .navbar__link {
     padding: 10px 0;
+  }
+  header .navbar .navbar__links .navbar__link a {
+    border-bottom: 3px solid none;
+  }
+  header .navbar .navbar__links .navbar__link a:hover {
+    border-bottom: 3px solid gray;
+  }
+  header .navbar .navbar__links .navbar__link_active a {
+    border-bottom: 3px solid black;
   }
   header .navbar .navbar__phones {
     -webkit-box-pack: center;
@@ -1427,6 +1494,10 @@ footer .footer__links .links__list .links__item::before {
     height: auto !important;
     width: 320px !important;
   }
+  main .main__questions .questions__titles {
+    text-align: center;
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1436,6 +1507,13 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__links {
     font-size: 24px;
+  }
+  header .navbar .navbar__links .navbar__link {
+    padding: 5px 0;
+  }
+  header .navbar .navbar__links .navbar__link a {
+    padding: 5px 0;
+    margin: 0 10px;
   }
   header .navbar .navbar__logo {
     font-size: 16px;
@@ -1563,6 +1641,13 @@ footer .footer__links .links__list .links__item::before {
     max-width: -moz-fit-content;
     max-width: fit-content;
     padding: 12px 30px;
+  }
+  main .main__questions .questions__button {
+    max-width: 200px;
+    padding: 12px 15px 12px 30px;
+  }
+  main .main__contacts .contacts__table {
+    border-spacing: 10px;
   }
   footer {
     -webkit-box-align: center;

@@ -214,10 +214,9 @@ main {
             justify-content: space-around;
             align-items: center;
             .carousel__content {
-                border-bottom: 1px solid rgb(221, 221, 221);
                 display: flex;
                 width: 70%;
-                justify-content: space-around;
+                justify-content: space-between;
                 .carousel__mobilebutton {
                     display: none;
                 }
@@ -299,6 +298,10 @@ main {
             }
             .button {
                 margin: 0;
+            }
+            .price__button {
+                text-align: center;
+                text-decoration: none;
             }
         }
         .prices__windows {
@@ -595,7 +598,7 @@ main {
     // Страница продукта
     .main__questions {
         background-image: url("/assets/images/products__qustions.jpg");
-        background-size: cover;
+        background-size: 123em;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -616,12 +619,11 @@ main {
             border: 2px solid white;
         }
         .questions__phone {
-            width: 400px;
             max-width: 300px;
-            text-align: center;
-            padding: 12px 30px; 
+            padding: 12px 0 12px 90px; 
             border-radius: 100px;
             background: #151435;
+            color: white;
         }
     }
     // Страница контактов
@@ -638,7 +640,7 @@ main {
         .contacts__table {
             font-size: 20px;
             border-spacing: 40px;
-            max-width: 50%;
+            max-width: 1000px;
             .table__row {
                 .cell__title {
                     vertical-align: top;
@@ -711,6 +713,26 @@ main {
                 padding-left: 28px;
                 border: 2px solid white;
                 max-width: none;
+            }
+            .switcher__buttons {
+                display: flex;
+                justify-content: center;
+                .buttons__button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin: 0 5px;
+                    height: 35px;
+                    width: 35px;
+                    font-size: 20px;
+                    background-color: #151435;
+                    border: 2px solid white;
+                    border-radius: 50px;
+                }
+                .buttons__button_current {
+                    background-color:#4985FF;
+                }
             }
         }
         .articles__article {
@@ -837,18 +859,21 @@ footer {
                 font-weight: 500;
                 font-size: 40px;
                 .navbar__link {
-                    border-bottom: 4px solid rgba(black,0);
-                    a{
+                    padding: 15px 0;
+                    a   {
+                        padding: 15px 0;
+                        margin: 0 30px;
                         color: black;
-                    }
-                    &:hover {
-                        border-bottom: 4px solid gray;
+                        border-bottom: 4px solid rgba(black,0);
+                        &:hover {
+                            border-bottom: 4px solid gray;
+                        }
                     }
                     &:first-child {
                         margin-top: 120px;
                     }
                 }
-                .navbar__link_active {
+                .navbar__link_active a{
                     border-bottom: 4px solid black;
                 }
             }
@@ -868,6 +893,24 @@ footer {
                 .window__main {
                     padding: 0 4%;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 1340px) {
+    main {
+        .main__questions {
+            flex-direction: column;
+            height: 500px;
+            max-height: 450px;
+            background: linear-gradient(180.33deg, #141334 49.55%, #260C3A 99.78%), #C4C4C4;
+            .questions__titles {
+                >.titles__title:first-child {
+                    border-bottom: 1px solid white;
+                }
+            }
+            .button {
+                max-width: 240px !important;
             }
         }
     }
@@ -1011,6 +1054,15 @@ footer {
                 height: 100vh;
                 .navbar__link {
                     padding: 10px 0;
+                    a {
+                        border-bottom: 3px solid none;
+                        &:hover {
+                            border-bottom: 3px solid gray;
+                        }
+                    }
+                }
+                .navbar__link_active a {
+                    border-bottom: 3px solid black;
                 }
             }
             .navbar__phones {
@@ -1174,6 +1226,12 @@ footer {
                 width: 320px !important;
             }
         }
+        .main__questions {
+            .questions__titles {
+                text-align: center;
+                max-width: 500px;
+            }
+        }
     }
 }
 @media (max-width: 550px) { 
@@ -1183,6 +1241,14 @@ footer {
         .navbar {
             .navbar__links {
                 font-size: 24px;
+                .navbar__link {
+                    padding: 5px 0;
+                    a {
+                        padding: 5px 0;
+                        margin: 0 10px;
+
+                    }
+                }
             }
             .navbar__logo {
                 font-size: 16px;
@@ -1340,6 +1406,17 @@ footer {
                         }
                     }
                 }
+            }
+        }
+        .main__questions {
+            .questions__button {
+                max-width: 200px;
+                padding: 12px 15px 12px 30px; 
+            }
+        }
+        .main__contacts {
+            .contacts__table {
+                border-spacing: 10px;
             }
         }
     }
