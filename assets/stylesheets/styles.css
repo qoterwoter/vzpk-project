@@ -345,14 +345,24 @@ main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__t
 }
 
 main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
   border: 2px solid #4985FF;
   background-color: #4985FF;
+  text-decoration: none;
   color: white;
   font-size: 16px;
   max-width: 200px;
   width: 200px;
-  padding: 12px;
+  padding: 0 12px;
   border-radius: 100px;
   cursor: pointer;
   -webkit-transition: .3s;

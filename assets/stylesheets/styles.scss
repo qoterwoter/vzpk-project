@@ -248,14 +248,18 @@ main {
                         }
                     }
                     .carousel__button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         margin-top: 40px;
                         border: 2px solid $ancient;
                         background-color: $ancient;
+                        text-decoration: none;
                         color: white;
                         font-size: 16px;
                         max-width: 200px;
                         width: 200px;
-                        padding: 12px;
+                        padding: 0 12px;
                         border-radius: 100px;
                         cursor: pointer;
                         transition: .3s;
