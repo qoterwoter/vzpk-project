@@ -815,6 +815,17 @@ footer {
         .main__articles {
             justify-content: center;
         }
+        .main__windows {
+            .windows__window {
+                .window__about {
+                    max-width: 1000px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:1630px) {
@@ -923,6 +934,17 @@ footer {
                 max-width: 240px !important;
             }
         }
+        .main__windows {
+            .windows__window {
+                .window__about {
+                    max-width: 850px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:1320px) {
@@ -1014,7 +1036,66 @@ footer {
             .windows__window {
                 .window__header {
                     .window__title {
-                        font-size: 40px;
+                        max-width: 70%;
+                    }
+                    .window__price {
+                        right: 0 !important;
+                    }
+                }
+                .window__main {
+                    flex-wrap: wrap;
+                    .window__images {
+                        .window__textures_desktop {
+                            display: none;
+                        }
+                        .window__image {
+                            width: 350px !important;
+                        }
+                    }
+                    .window__textures_mobile {
+                        margin: 0 auto;
+                        display: block;
+                        img {
+                            height: 110px;
+                        }
+                    }
+                    .window__about {
+                        padding-top: 0;
+                        .window__description {
+                            display: none;
+                        }
+                        .window__props {
+                            margin-top: 0;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            .window__property {
+                                .property__image {
+                                    display: none;
+                                }
+                                .property__title {
+                                    &:nth-child(1) {
+                                        padding-top: 100px !important;
+                                    }
+                                }
+                            }
+                        }
+                        .window__actions_desktop {
+                            display: none;
+                        }
+                    }
+                    .window__actions_mobile {
+                        max-width: 90%;
+                        width: 100%;
+                        display: flex;
+                        margin: 0 auto;
+                    }
+                }
+                .window__about {
+                    max-width: 700px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
                     }
                 }
             }
@@ -1116,62 +1197,15 @@ footer {
             }
         }
         .main__windows {
+            >.window__about {
+                padding: 0 !important;
+            }
             .windows__window {
-                .window__header {
-                    .window__title {
-                        max-width: 70%;
-                    }
-                    .window__price {
-                        right: 0 !important;
-                    }
-                }
-                .window__main {
-                    flex-wrap: wrap;
-                    .window__images {
-                        .window__textures_desktop {
-                            display: none;
-                        }
-                        .window__image {
-                            width: 350px !important;
-                        }
-                    }
-                    .window__textures_mobile {
-                        margin: 0 auto;
-                        display: block;
-                        img {
-                            height: 110px;
-                        }
-                    }
-                    .window__about {
-                        padding-top: 0;
-                        .window__description {
-                            display: none;
-                        }
-                        .window__props {
-                            margin-top: 0;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: space-between;
-                            .window__property {
-                                .property__image {
-                                    display: none;
-                                }
-                                .property__title {
-                                    &:nth-child(1) {
-                                        padding-top: 100px !important;
-                                    }
-                                }
-                            }
-                        }
-                        .window__actions_desktop {
-                            display: none;
-                        }
-                    }
-                    .window__actions_mobile {
-                        max-width: 90%;
-                        width: 100%;
-                        display: flex;
-                        margin: 0 auto;
+                .window__about {
+                    max-width: 500px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
                     }
                 }
             }
@@ -1216,6 +1250,13 @@ footer {
                             height: auto;
                             max-width: 340px;
                         }
+                    }
+                }
+                .window__about {
+                    max-width: 400px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
                     }
                 }
             }
@@ -1441,6 +1482,13 @@ footer {
                         }
                     }
                 }
+                .window__about {
+                    max-width: 280px;
+                    padding: 0 60px 30px 60px;
+                    .about__title {
+                        top: -35px;
+                    }
+                }
             }
         }
         .main__questions {
@@ -1577,6 +1625,19 @@ footer {
                             max-width: 120px;
                             font-size: 11px;
                         }
+                    }
+                }
+                .window__about {
+                    max-width: 270px;
+                    padding: 0 40px 30px 50px;
+                    .about__title {
+                        left:-20px;
+                        top: -35px;
+                        font-size: 25px;
+                    }
+                    .about__list {
+                        font-size: 15px;
+                        line-height: 22px;
                     }
                 }
             }

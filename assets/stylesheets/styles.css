@@ -1148,6 +1148,13 @@ footer .footer__links .links__list .links__item::before {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  main .main__windows .windows__window .window__about {
+    max-width: 1000px;
+    padding: 0 60px 30px 60px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
+  }
 }
 
 @media (max-width: 1630px) {
@@ -1235,6 +1242,13 @@ footer .footer__links .links__list .links__item::before {
   main .main__questions .button {
     max-width: 240px !important;
   }
+  main .main__windows .windows__window .window__about {
+    max-width: 850px;
+    padding: 0 60px 30px 60px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
+  }
 }
 
 @media (max-width: 1320px) {
@@ -1308,7 +1322,70 @@ footer .footer__links .links__list .links__item::before {
 
 @media (max-width: 1020px) {
   main .main__windows .windows__window .window__header .window__title {
-    font-size: 40px;
+    max-width: 70%;
+  }
+  main .main__windows .windows__window .window__header .window__price {
+    right: 0 !important;
+  }
+  main .main__windows .windows__window .window__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__textures_desktop {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__images .window__image {
+    width: 350px !important;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile {
+    margin: 0 auto;
+    display: block;
+  }
+  main .main__windows .windows__window .window__main .window__textures_mobile img {
+    height: 110px;
+  }
+  main .main__windows .windows__window .window__main .window__about {
+    padding-top: 0;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__description {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__image {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__title:nth-child(1) {
+    padding-top: 100px !important;
+  }
+  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
+    display: none;
+  }
+  main .main__windows .windows__window .window__main .window__actions_mobile {
+    max-width: 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  main .main__windows .windows__window .window__about {
+    max-width: 700px;
+    padding: 0 60px 30px 60px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
   }
   main .main__popularGoods {
     max-height: 880px;
@@ -1409,64 +1486,15 @@ footer .footer__links .links__list .links__item::before {
     margin-top: 20px;
     font-size: 35px;
   }
-  main .main__windows .windows__window .window__header .window__title {
-    max-width: 70%;
+  main .main__windows > .window__about {
+    padding: 0 !important;
   }
-  main .main__windows .windows__window .window__header .window__price {
-    right: 0 !important;
+  main .main__windows .windows__window .window__about {
+    max-width: 500px;
+    padding: 0 60px 30px 60px;
   }
-  main .main__windows .windows__window .window__main {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .main__windows .windows__window .window__main .window__images .window__textures_desktop {
-    display: none;
-  }
-  main .main__windows .windows__window .window__main .window__images .window__image {
-    width: 350px !important;
-  }
-  main .main__windows .windows__window .window__main .window__textures_mobile {
-    margin: 0 auto;
-    display: block;
-  }
-  main .main__windows .windows__window .window__main .window__textures_mobile img {
-    height: 110px;
-  }
-  main .main__windows .windows__window .window__main .window__about {
-    padding-top: 0;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__description {
-    display: none;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__props {
-    margin-top: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__image {
-    display: none;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__props .window__property .property__title:nth-child(1) {
-    padding-top: 100px !important;
-  }
-  main .main__windows .windows__window .window__main .window__about .window__actions_desktop {
-    display: none;
-  }
-  main .main__windows .windows__window .window__main .window__actions_mobile {
-    max-width: 90%;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
   }
 }
 
@@ -1496,6 +1524,13 @@ footer .footer__links .links__list .links__item::before {
   main .main__windows .windows__window .window__main .window__textures_mobile img {
     height: auto;
     max-width: 340px;
+  }
+  main .main__windows .windows__window .window__about {
+    max-width: 400px;
+    padding: 0 60px 30px 60px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
   }
   main .main__popularGoods {
     max-height: 700px;
@@ -1679,6 +1714,13 @@ footer .footer__links .links__list .links__item::before {
     max-width: fit-content;
     padding: 12px 30px;
   }
+  main .main__windows .windows__window .window__about {
+    max-width: 280px;
+    padding: 0 60px 30px 60px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    top: -35px;
+  }
   main .main__questions .questions__button {
     max-width: 200px;
     padding: 12px 15px 12px 30px;
@@ -1777,6 +1819,19 @@ footer .footer__links .links__list .links__item::before {
     height: 33px;
     max-width: 120px;
     font-size: 11px;
+  }
+  main .main__windows .windows__window .window__about {
+    max-width: 270px;
+    padding: 0 40px 30px 50px;
+  }
+  main .main__windows .windows__window .window__about .about__title {
+    left: -20px;
+    top: -35px;
+    font-size: 25px;
+  }
+  main .main__windows .windows__window .window__about .about__list {
+    font-size: 15px;
+    line-height: 22px;
   }
   main .main__articles .articles__switcher {
     max-width: 320px;
