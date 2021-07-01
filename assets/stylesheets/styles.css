@@ -117,7 +117,6 @@ header .navbar .navbar__phones {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 19px;
   width: 380px;
   font-size: 18px;
 }
@@ -971,6 +970,7 @@ main .main__articles .articles__switcher {
 }
 
 main .main__articles .articles__switcher .switch__item {
+  max-height: 89px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,17 +980,23 @@ main .main__articles .articles__switcher .switch__item {
   cursor: pointer;
 }
 
-main .main__articles .articles__switcher .switch__item:nth-child(1) {
-  margin-top: 20px;
-}
-
 main .main__articles .articles__switcher .switch__item .switch__number {
   position: relative;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 9px 10px;
   border: 1px solid white;
   border-radius: 50px;
   width: 28px;
+  max-height: 40px;
   max-width: 40px;
   font-weight: 500;
   background-color: #151435;
@@ -1007,6 +1013,7 @@ main .main__articles .articles__switcher .switch__item .switch {
 
 main .main__articles .articles__switcher .switch__item_current {
   border-radius: 15px;
+  max-height: 87px;
   position: relative;
   background: #5290F8;
   width: 26em;
@@ -1017,6 +1024,7 @@ main .main__articles .articles__switcher .switch__item_current {
 }
 
 main .main__articles .articles__switcher .switcher__buttons {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,6 +1142,14 @@ footer .footer__links .links__list .links__item::before {
   }
 }
 
+@media (max-width: 1772px) {
+  main .main__articles {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 1630px) {
   header .navbar .navbar__links {
     margin-left: 5%;
@@ -1162,9 +1178,6 @@ footer .footer__links .links__list .links__item::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     height: 100vh;
     position: absolute;
     background-color: rgba(238, 238, 238, 0.82);
@@ -1190,6 +1203,10 @@ footer .footer__links .links__list .links__item::before {
   }
   header .navbar .navbar__links .navbar__link_active a {
     border-bottom: 4px solid black;
+  }
+  header .navbar .navbar__phones {
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   main .main__windows .windows__window .window__header .window__title {
     margin-right: 15%;
@@ -1498,6 +1515,26 @@ footer .footer__links .links__list .links__item::before {
     text-align: center;
     max-width: 500px;
   }
+  main .main__articles .articles__switcher {
+    max-width: 470px;
+  }
+  main .main__articles .articles__switcher .switch__item {
+    width: 490px;
+  }
+  main .main__articles .articles__switcher .switch__item_current {
+    max-height: 89px;
+    left: -20px;
+    padding-left: 20px;
+    width: 490px;
+    border-radius: 0;
+    border: 0;
+  }
+  main .main__articles .articles__article .article__description {
+    font-size: 18px;
+  }
+  main .main__articles .articles__article .article__image {
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1649,6 +1686,39 @@ footer .footer__links .links__list .links__item::before {
   main .main__contacts .contacts__table {
     border-spacing: 10px;
   }
+  main .main__articles .articles__title {
+    font-size: 35px;
+    max-width: 100%;
+  }
+  main .main__articles .articles__switcher {
+    max-width: 400px;
+  }
+  main .main__articles .articles__switcher .switch__item {
+    font-size: 20px;
+    width: 420px;
+  }
+  main .main__articles .articles__switcher .switch__item .switch__number {
+    width: 22px;
+  }
+  main .main__articles .articles__switcher .switch__item .switch {
+    left: -23px;
+    padding-left: 35px;
+  }
+  main .main__articles .articles__switcher .switch__item_current {
+    width: 420px;
+  }
+  main .main__articles .articles__switcher .switcher__buttons .buttons__button {
+    font-size: 17px;
+    height: 30px;
+    width: 30px;
+  }
+  main .main__articles .articles__article .article__title {
+    font-size: 28px;
+  }
+  main .main__articles .articles__article .article__image {
+    max-height: none;
+    max-width: 400px;
+  }
   footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1707,6 +1777,31 @@ footer .footer__links .links__list .links__item::before {
     height: 33px;
     max-width: 120px;
     font-size: 11px;
+  }
+  main .main__articles .articles__switcher {
+    max-width: 320px;
+  }
+  main .main__articles .articles__switcher .switch__item {
+    font-size: 16px;
+    width: 340px;
+  }
+  main .main__articles .articles__switcher .switch__item .switch__number {
+    height: 17px;
+    width: 15px;
+  }
+  main .main__articles .articles__switcher .switch__item_current {
+    max-height: 89px;
+    left: -20px;
+    padding-left: 20px;
+    width: 340px;
+    border-radius: 0;
+    border: 0;
+  }
+  main .main__articles .articles__article .article__description {
+    font-size: 16px;
+  }
+  main .main__articles .articles__article .article__image {
+    max-width: 340px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
