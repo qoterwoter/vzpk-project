@@ -40,6 +40,8 @@ header {
         max-height: 110px;
         border-bottom: 1px solid #A1A1A1;
         .navbar__logo {
+            text-decoration: none;
+            color: white;
             background: url('/assets/images/window.png') 0 50% no-repeat;
             background-size:98px;
             height: 111px;

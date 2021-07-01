@@ -63,6 +63,8 @@ header .navbar {
 }
 
 header .navbar .navbar__logo {
+  text-decoration: none;
+  color: white;
   background: url("/assets/images/window.png") 0 50% no-repeat;
   background-size: 98px;
   height: 111px;
