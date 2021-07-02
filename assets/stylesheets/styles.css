@@ -565,8 +565,7 @@ main .main__consultation .consultation__form .consultation__input {
   border: 2px solid black;
   padding: 10px 12px;
   font-weight: 500;
-  margin-top: 10%;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -594,6 +593,10 @@ main .main__consultation .consultation__form .consultation__input::placeholder {
 main .main__consultation .consultation__form .consultation__input:focus {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+}
+
+main .main__consultation .consultation__form .consultation__input:first-child {
+  margin-top: 10%;
 }
 
 main .main__consultation .consultation__form .consultation__comment {

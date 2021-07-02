@@ -396,8 +396,7 @@ main {
                 border: 2px solid black;
                 padding: 10px 12px;
                 font-weight: 500;
-                margin-top: 10%;
-                margin-bottom: 7%;
+                margin-bottom: 5%;
                 transition: .3s;
                 &::placeholder {
                     font-weight: 500;
@@ -405,6 +404,9 @@ main {
                 }
                 &:focus {
                     box-shadow: 0 0 10px $shadow_color;
+                }
+                &:first-child {
+                    margin-top: 10%;
                 }
             }
             .consultation__comment {
