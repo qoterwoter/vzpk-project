@@ -431,6 +431,33 @@ main {
                 }
             }
         }
+        .respone__background {
+            position: fixed;
+            top:0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.253);
+            z-index: 199;
+        }
+        .consultation__response {
+            top:40%;
+            position: fixed;
+            background-color: white;
+            padding: 30px 30px;
+            border-radius: 15px;
+            z-index: 2000;
+            .response__title {
+                margin-bottom: 20px;
+            }
+            .response__close {
+                margin-left: 20px;
+                color: red;
+                cursor: pointer;
+            }
+            .response__description {
+                text-align: center;
+            }
+        }
     }
     // Страница каталога
     .main__windows {
@@ -1550,7 +1577,11 @@ footer {
             }
         }
         .main__contacts {
+            .contacts__title {
+                font-size: 26px;
+            }
             .contacts__table {
+                font-size: 18px;
                 border-spacing: 10px;
             }
         }

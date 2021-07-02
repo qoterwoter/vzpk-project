@@ -644,6 +644,38 @@ main .main__consultation .consultation__form .button:hover {
   color: #4985FF;
 }
 
+main .main__consultation .respone__background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.253);
+  z-index: 199;
+}
+
+main .main__consultation .consultation__response {
+  top: 40%;
+  position: fixed;
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 15px;
+  z-index: 2000;
+}
+
+main .main__consultation .consultation__response .response__title {
+  margin-bottom: 20px;
+}
+
+main .main__consultation .consultation__response .response__close {
+  margin-left: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+main .main__consultation .consultation__response .response__description {
+  text-align: center;
+}
+
 main .main__windows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1808,7 +1840,11 @@ footer .footer__links .links__list .links__item::before {
     max-width: 200px;
     padding: 12px 15px 12px 30px;
   }
+  main .main__contacts .contacts__title {
+    font-size: 26px;
+  }
   main .main__contacts .contacts__table {
+    font-size: 18px;
     border-spacing: 10px;
   }
   main .main__articles .articles__title {
