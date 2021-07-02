@@ -975,6 +975,11 @@ main .main__contacts .contacts__table .table__row .cell_description {
   text-align: center;
 }
 
+main .main__contacts .contacts__table .table__row .cell_description a {
+  text-decoration: none;
+  color: black;
+}
+
 main .main__articles {
   margin: 50px 106px;
   display: -webkit-box;
@@ -1319,18 +1324,14 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__prices .prices__description {
     padding: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  main .main__prices .prices__description .prices__title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 13%;
-  }
-  main .main__prices .prices__description .button {
-    display: none;
   }
   main .main__prices .prices__windows {
     margin: 0;
@@ -1469,14 +1470,24 @@ footer .footer__links .links__list .links__item::before {
             align-items: center;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 40px;
     font-size: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__price {
     font-size: 24px;
   }
-  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__mobilebutton {
-    display: block;
+  main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__textBlock .carousel__description {
+    text-indent: 0;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__content .carousel__button {
     display: none;
@@ -1727,7 +1738,14 @@ footer .footer__links .links__list .links__item::before {
   main .main__consultation .consultation__form {
     max-width: 90%;
   }
-  main .main__prices .prices__title {
+  main .main__prices .prices__description {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 100px;
+  }
+  main .main__prices .prices__description .prices__title {
+    font-size: 30px;
     max-width: 90%;
   }
   main .main__prices .prices__windows {
@@ -1835,8 +1853,14 @@ footer .footer__links .links__list .links__item::before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer .footer__contacts {
+    max-width: 85%;
+  }
   footer .footer__contacts .contacts__item svg {
     display: none;
+  }
+  footer .footer__links {
+    max-width: 85%;
   }
   footer .footer__links .links__list .links__item::before {
     display: none;

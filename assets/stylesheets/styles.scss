@@ -670,6 +670,10 @@ main {
                 }
                 .cell_description {
                     text-align: center;
+                    a {
+                        text-decoration: none;;
+                        color: black;
+                    }
                 }
             }
         }
@@ -998,13 +1002,14 @@ footer {
         .main__prices {
             .prices__description {
                 padding: 0;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 13%;
                 .prices__title {
-                    margin-bottom: 13%;
                 }
                 .button {
-                    display: none;
+
                 }
             }
             .prices__windows {
@@ -1146,14 +1151,20 @@ footer {
                     flex-direction: column-reverse;
                     align-items: center;
                     .carousel__textBlock {
+                        flex-direction: column;
+                        display: flex;
                         margin-top: 40px;
                         font-size: 20px;
+                        align-items: center;
                         .carousel__price {
                             font-size: 24px;
                         }
+                        .carousel__description {
+                            text-indent: 0;
+                        }
                     }
                     .carousel__mobilebutton {
-                        display: block;
+                        // display: block;
                     }
                     .carousel__button {
                         display: none;
@@ -1452,8 +1463,14 @@ footer {
             }
         }
         .main__prices {
-            .prices__title {
-                max-width: 90%;
+            .prices__description {
+                justify-content: center;
+                margin-bottom: 100px;
+                .prices__title {
+                    font-size: 30px;
+                    max-width: 90%;
+                }
+                
             }
             .prices__windows {
                 margin-top: 30px;
@@ -1582,6 +1599,7 @@ footer {
         align-items: center;
         flex-direction: column;
         .footer__contacts {
+            max-width: 85%;
             .contacts__item {
                 svg {
                     display: none;
@@ -1589,6 +1607,7 @@ footer {
             }
         }
         .footer__links {
+            max-width: 85%;
             .links__list {
                 .links__item {
                     &::before {
