@@ -1,7 +1,8 @@
-function showResponse() {
+function showResponse(e) {
     // console.log('Response')
-    background.style.display = 'flex'
-    response.style.display = 'flex'
+    e.preventDefault();
+    background.style.display = 'block'
+    response.style.display = 'block'
 }
 let response = document.getElementsByClassName('consultation__response')[0]
 let background = document.getElementsByClassName('respone__background')[0]

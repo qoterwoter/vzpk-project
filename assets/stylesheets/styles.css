@@ -651,9 +651,11 @@ main .main__consultation .respone__background {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.253);
   z-index: 199;
+  display: none;
 }
 
 main .main__consultation .consultation__response {
+  display: none;
   top: 40%;
   position: fixed;
   background-color: white;
