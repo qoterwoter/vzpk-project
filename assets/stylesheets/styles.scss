@@ -1009,12 +1009,15 @@ footer {
             }
             .prices__windows {
                 margin: 0;                
-                justify-content: center;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
                 .windows__window {
-                    display: none;
+                    margin-top: 40px;
                     max-width: 600px;
                     width: 500px;
                     &:first-child {
+                        margin-top: 0;
                         display: flex;
                     }
                 }
