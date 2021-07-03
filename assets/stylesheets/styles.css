@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-main {
-  scroll-behavior: smooth;
-}
-
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
