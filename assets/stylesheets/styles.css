@@ -572,7 +572,7 @@ main .main__consultation .consultation__form .consultation__input {
   border: 2px solid black;
   padding: 10px 12px;
   font-weight: 500;
-  margin-bottom: 5%;
+  margin: 2.5% 0;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -607,6 +607,7 @@ main .main__consultation .consultation__form .consultation__input:first-child {
 }
 
 main .main__consultation .consultation__form .consultation__comment {
+  margin-top: 2.5%;
   border: 2px solid black;
   padding: 10px 12px;
   font-weight: 500;
