@@ -37,6 +37,12 @@ window.onload = function(event) {
         response.style.display = 'block'
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const inputs = Array.from(document.querySelectorAll('.consultation__input#email, .consultation__input#phone'));
+    const inputListener = e => inputs.filter(i => i !== e.target).forEach(i => i.required = !e.target.value.length);
+    inputs.forEach(i => i.addEventListener('input', inputListener));
+});
+
 for (let i = 0; i < windows.length;i++) {
     windows[i].childNodes[3].childNodes[7].childNodes[1].onclick=function() {addTheme(i+1)}
     windows[i].childNodes[3].childNodes[3].childNodes[5].childNodes[1].onclick=function() {addTheme(i+1)}
