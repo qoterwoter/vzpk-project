@@ -1,4 +1,3 @@
-
 document.getElementById('phone').addEventListener('input', function (e) {
     var x = e.target.value
         .replace(/\D/g, '')

@@ -16,6 +16,8 @@ function addTheme(n) {
     theme.value=windowTitle
 }
 
+let phone = document.getElementById('phone')
+let email = document.getElementById('email')
 let response = document.getElementsByClassName('consultation__response')[0];
 let background = document.getElementsByClassName('respone__background')[0];
 let windows = document.getElementsByClassName('windows__window');
