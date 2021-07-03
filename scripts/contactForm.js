@@ -9,7 +9,7 @@ function closeResponse() {
 }
 function addTheme(n) {
     if(typeof n === 'number') {
-        windowTitle = windows[n-1].childNodes[1].childNodes[1].innerHTML
+        windowTitle = titles[n-1].innerHTML
     } else {
         windowTitle = n;
     }
@@ -21,6 +21,7 @@ let email = document.getElementById('email')
 let response = document.getElementsByClassName('consultation__response')[0];
 let background = document.getElementsByClassName('respone__background')[0];
 let windows = document.getElementsByClassName('windows__window');
+let titles = document.getElementsByClassName('title__model');
 let theme = document.getElementsByClassName('form__theme')[0];
 
 window.onclick = function (event) {
