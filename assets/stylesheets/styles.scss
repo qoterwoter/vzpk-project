@@ -400,7 +400,7 @@ main {
                 border: 2px solid black;
                 padding: 10px 12px;
                 font-weight: 500;
-                margin: 2.5% 0;
+                margin-bottom: 1.5%;
                 transition: .3s;
                 &::placeholder {
                     font-weight: 500;
@@ -413,8 +413,17 @@ main {
                     margin-top: 10%;
                 }
             }
-            .consultation__comment {
+            .consultation__or {
+                position: relative;
+                bottom: -9px;
+                text-align: center;
+                color: gray;
+            }
+            .consultation__label {
                 margin-top: 2.5%;
+                margin-bottom: 1%;
+            }
+            .consultation__comment {
                 border: 2px solid black;
                 padding: 10px 12px;
                 font-weight: 500;
@@ -1181,7 +1190,7 @@ footer {
             }
         }
         .main__popularGoods {
-            max-height: 880px;
+            max-height: none;
             height: 1000px;
             .popularGoods__carousel {
                 .carousel__button {

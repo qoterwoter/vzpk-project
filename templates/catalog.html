@@ -217,7 +217,7 @@
                     <div class="carousel__textBlock">
                         <h3 class="carousel__price">от 19 100 Р</h3>
                         <p class="carousel__description">
-                            Описание второго 
+                            В этих окнах из профиля “” нет ничего лишнего, все нацелено на решение основных задач: сохранение тепла и защиту от шума. При этом за счет своей приглушенно- глянцевой поверхности окна будут сохранять безупречный внешний вид. Системная глубина 58 мм и трехкамерное строение профилей “” обеспечивают высокий уровень тепло- и шумоизоляции 
                         </p>
                         <ul class="carousel__list list">
                             <li class='list__item'>Пятикамерный профиль</li>
@@ -233,7 +233,7 @@
                     <div class="carousel__textBlock">
                         <h3 class="carousel__price">от 29 100 Р</h3>
                         <p class="carousel__description">
-                            Описание второго 
+                            В этих окнах из профиля “” нет ничего лишнего, все нацелено на решение основных задач: сохранение тепла и защиту от шума. При этом за счет своей приглушенно- глянцевой поверхности окна будут сохранять безупречный внешний вид. Системная глубина 58 мм и трехкамерное строение профилей “” обеспечивают высокий уровень тепло- и шумоизоляции 
                         </p>
                         <ul class="carousel__list list">
                             <li class='list__item'>Пятикамерный профиль</li>
@@ -250,11 +250,15 @@
         <div id='consultation__form' class="main__consultation consultation">
             <h2 class="consultation__title">Бесплатная консультация</h2>
             <form class="consultation__form" action method="" onsubmit="return showResponse(event)">
-                <input class='consultation__input form__email' id='email' type="email" placeholder="E-mail" required>
-                <p></p>
-                <input class="consultation__input form__phone" id='phone' type="text" placeholder="8 (___) ___-__-__" required>
-                <input class='consultation__input form__theme' type="text" name='theme' placeholder="Тема" >
-                <textarea class="consultation__comment" name="comment" cols="30" rows="6" placeholder="Комментарий.." ></textarea>
+                <label class='consultation__label' for="email">Ваша почта:</label>
+                <input class='consultation__input form__email' id='email' type="email" placeholder="ivan@ivanov.ru" required>
+                <p class='consultation__or'>или</p>
+                <label class='consultation__label' for="phone">Ваш номер телефона:</label>
+                <input class="consultation__input form__phone" id='phone' type="text" placeholder="8 (123) 456-78-90" required>
+                <label class='consultation__label' for="theme">Тема сообщения:</label>
+                <input class='consultation__input form__theme' id='theme' type="text" name='theme' placeholder="Рассчитать стоимость.." >
+                <label class='consultation__label' for="comment">Комментарий к сообщению:</label>
+                <textarea class="consultation__comment" id='comment' name="comment" cols="30" rows="6" placeholder="Комментарий.." ></textarea>
                 <input class='button' type="submit" value="Отправить"> 
             </form>
             <div class="respone__background"></div>

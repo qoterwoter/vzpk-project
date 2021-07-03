@@ -572,7 +572,7 @@ main .main__consultation .consultation__form .consultation__input {
   border: 2px solid black;
   padding: 10px 12px;
   font-weight: 500;
-  margin: 2.5% 0;
+  margin-bottom: 1.5%;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -606,8 +606,19 @@ main .main__consultation .consultation__form .consultation__input:first-child {
   margin-top: 10%;
 }
 
-main .main__consultation .consultation__form .consultation__comment {
+main .main__consultation .consultation__form .consultation__or {
+  position: relative;
+  bottom: -9px;
+  text-align: center;
+  color: gray;
+}
+
+main .main__consultation .consultation__form .consultation__label {
   margin-top: 2.5%;
+  margin-bottom: 1%;
+}
+
+main .main__consultation .consultation__form .consultation__comment {
   border: 2px solid black;
   padding: 10px 12px;
   font-weight: 500;
@@ -1508,7 +1519,7 @@ footer .footer__links .links__list .links__item::before {
     top: -35px;
   }
   main .main__popularGoods {
-    max-height: 880px;
+    max-height: none;
     height: 1000px;
   }
   main .main__popularGoods .popularGoods__carousel .carousel__button {
