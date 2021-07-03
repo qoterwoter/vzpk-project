@@ -952,7 +952,17 @@ main .main__questions .questions__titles .titles__title {
   font-weight: 300;
 }
 
-main .main__questions .questions__button {
+main .main__questions .questions__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+}
+
+main .main__questions .questions__form .questions__button {
   width: 400px;
   max-width: 400px;
   font-size: 24px;
@@ -960,11 +970,11 @@ main .main__questions .questions__button {
   border: 2px solid white;
 }
 
-main .main__questions .questions__button:hover {
+main .main__questions .questions__form .questions__button:hover {
   background: #151435;
 }
 
-main .main__questions .questions__phone {
+main .main__questions .questions__form .questions__phone {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;

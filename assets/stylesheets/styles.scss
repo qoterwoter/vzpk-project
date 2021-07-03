@@ -659,22 +659,27 @@ main {
                 font-weight: 300;
             }
         }
-        .questions__button {
-            width: 400px;
-            max-width: 400px;
-            font-size: 24px;
-            margin: 0;
-            border: 2px solid white;
-            &:hover {
-                background: #151435;
+        .questions__form {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            .questions__button {
+                width: 400px;
+                max-width: 400px;
+                font-size: 24px;
+                margin: 0;
+                border: 2px solid white;
+                &:hover {
+                    background: #151435;
+                }
             }
-        }
-        .questions__phone {
-            max-width: fit-content;
-            padding: 12px 0 12px 100px; 
-            border-radius: 100px;
-            background: #151435;
-            color: white;
+            .questions__phone {
+                max-width: fit-content;
+                padding: 12px 0 12px 100px; 
+                border-radius: 100px;
+                background: #151435;
+                color: white;
+            }
         }
     }
     // Страница контактов
