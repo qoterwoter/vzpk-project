@@ -84,14 +84,14 @@
                             </div>
                         </div>
                         <div class="window__actions_desktop">
-                            <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                            <a  class='button window__button button__price'>Рассчитать стоимость</a>
                         </div>
                     </div>
                     <div class='window__textures_mobile' >
                         <img src="/assets/images/textures.png" alt="">
                     </div>
                     <div class="window__actions_mobile">
-                        <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                        <a  class='button window__button button__price'>Рассчитать стоимость</a>
                     </div>
                 </div>
             </article>
@@ -132,14 +132,14 @@
                             </div>
                         </div>
                         <div class="window__actions_desktop">
-                            <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                            <a  class='button window__button button__price'>Рассчитать стоимость</a>
                         </div>
                     </div>
                     <div class='window__textures_mobile' >
                         <img src="/assets/images/textures.png" alt="">
                     </div>
                     <div class="window__actions_mobile">
-                        <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                        <a  class='button window__button button__price'>Рассчитать стоимость</a>
                     </div>
                 </div>
             </article>
@@ -180,14 +180,14 @@
                             </div>
                         </div>
                         <div class="window__actions_desktop">
-                            <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                            <a  class='button window__button button__price'>Рассчитать стоимость</a>
                         </div>
                     </div>
                     <div class='window__textures_mobile' >
                         <img src="/assets/images/textures.png" alt="">
                     </div>
                     <div class="window__actions_mobile">
-                        <a href='#' class='button window__button button__price'>Рассчитать стоимость</a>
+                        <a  class='button window__button button__price'>Рассчитать стоимость</a>
                     </div>
                 </div>
             </article>
@@ -249,11 +249,17 @@
         </div>
         <div class="main__consultation consultation">
             <h2 class="consultation__title">Бесплатная консультация</h2>
-            <form class="consultation__form" action="">
-                <input class='consultation__input' type="email" placeholder="E-mail">
-                <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.."></textarea>
+            <form class="consultation__form" onsubmit="return showResponse(event)">
+                <input class='consultation__input form__email' type="email" placeholder="E-mail" >
+                <input class='consultation__input form__theme' type="text" placeholder="Тема (стать партнером или модель окна)" >
+                <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.." ></textarea>
                 <input class='button' type="submit" value="Отправить"> 
             </form>
+            <div class="respone__background"></div>
+            <div class="consultation__response">
+                <h2 class='response__title'>Сообщение отправлено! <span onclick="closeResponse();" class='response__close'>✕</span></h2>
+                <p class='response__description'>Скоро мы с вами свяжемся.</p>
+            </div>
         </div>
     </main>     
     <footer class='footer'>
@@ -317,6 +323,7 @@
         </div>
     </footer>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/contactForm.js"></script>
 </body>
 </html>
 

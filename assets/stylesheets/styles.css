@@ -1256,7 +1256,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 1000px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1350,7 +1349,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 850px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1449,7 +1447,9 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__main .window__textures_mobile {
     margin: 0 auto;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   main .main__windows .windows__window .window__main .window__textures_mobile img {
     height: 110px;
@@ -1488,11 +1488,13 @@ footer .footer__links .links__list .links__item::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
   }
   main .main__windows .windows__window .window__about {
     max-width: 700px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1611,7 +1613,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 500px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1647,7 +1648,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 400px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1843,7 +1843,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 280px;
-    padding: 0 60px 30px 60px;
   }
   main .main__windows .windows__window .window__about .about__title {
     top: -35px;
@@ -1959,7 +1958,6 @@ footer .footer__links .links__list .links__item::before {
   }
   main .main__windows .windows__window .window__about {
     max-width: 270px;
-    padding: 0 40px 30px 50px;
   }
   main .main__windows .windows__window .window__about .about__title {
     left: -20px;

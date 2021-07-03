@@ -889,7 +889,7 @@ footer {
             .windows__window {
                 .window__about {
                     max-width: 1000px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1008,7 +1008,7 @@ footer {
             .windows__window {
                 .window__about {
                     max-width: 850px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1128,7 +1128,7 @@ footer {
                     }
                     .window__textures_mobile {
                         margin: 0 auto;
-                        display: block;
+                        display: flex;
                         img {
                             height: 110px;
                         }
@@ -1162,12 +1162,13 @@ footer {
                         max-width: 90%;
                         width: 100%;
                         display: flex;
+                        justify-content: center;
                         margin: 0 auto;
                     }
                 }
                 .window__about {
                     max-width: 700px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1283,7 +1284,7 @@ footer {
             .windows__window {
                 .window__about {
                     max-width: 500px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1334,7 +1335,7 @@ footer {
                 }
                 .window__about {
                     max-width: 400px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1570,7 +1571,7 @@ footer {
                 }
                 .window__about {
                     max-width: 280px;
-                    padding: 0 60px 30px 60px;
+                    // padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1721,7 +1722,7 @@ footer {
                 }
                 .window__about {
                     max-width: 270px;
-                    padding: 0 40px 30px 50px;
+                    // padding: 0 40px 30px 50px;
                     .about__title {
                         left:-20px;
                         top: -35px;
