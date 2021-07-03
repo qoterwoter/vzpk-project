@@ -9,9 +9,12 @@ function closeResponse() {
     response.style.display = 'none'
 }
 function addTheme(n) {
-    console.log(n)
-    windowTitle = windows[n-1].childNodes[1].childNodes[1].innerHTML
-    console.log(theme.value=windowTitle)
+    if(typeof n === 'number') {
+        windowTitle = windows[n-1].childNodes[1].childNodes[1].innerHTML
+    } else {
+        windowTitle = n;
+    }
+    theme.value=windowTitle
 }
 
 let response = document.getElementsByClassName('consultation__response')[0];
