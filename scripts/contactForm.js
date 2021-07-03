@@ -29,7 +29,6 @@ window.onclick = function (event) {
     }
 }
 for (let i = 0; i < windows.length;i++) {
-    console.log(windows[i].childNodes[3].childNodes[3].childNodes[5].childNodes[1],windows[i].childNodes[3].childNodes[7].childNodes[1])
     windows[i].childNodes[3].childNodes[7].childNodes[1].onclick=function() {addTheme(i+1)}
     windows[i].childNodes[3].childNodes[3].childNodes[5].childNodes[1].onclick=function() {addTheme(i+1)}
 }
