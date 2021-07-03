@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+a {
+  scroll-behavior: smooth;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,6 +466,9 @@ main .main__prices .prices__windows .windows__window {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px 13px;
   -webkit-box-align: center;
       -ms-flex-align: center;

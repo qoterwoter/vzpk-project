@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    scroll-behavior: smooth
+}
 $ancient: #4985FF;
 .button {
     display: flex;
@@ -328,6 +331,7 @@ main {
                 background: white;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 padding: 30px 13px;
                 align-items: center;
                 box-shadow: 4px 9px 9px  rgba(0, 0, 0, 0.233);
