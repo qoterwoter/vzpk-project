@@ -9,7 +9,7 @@ function closeResponse() {
 }
 function addTheme(n) {
     if(typeof n === 'number') {
-        windowTitle = titles[n-1].innerHTML
+        windowTitle = "Рассчитать стоимость " + titles[n-1].innerHTML
     } else {
         windowTitle = n;
     }
