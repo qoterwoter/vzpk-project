@@ -1,6 +1,21 @@
 function showResponse(e) {
     // e.preventDefault();
-    sessionStorage.setItem('response',true)
+    phone = document.getElementById('phone')
+    email = document.getElementById('email')
+    console.log(email.value.length)
+    if (phone.value.length > 17 || email.value.length > 6) {
+        sessionStorage.setItem('response',true)
+        sessionStorage.setItem('height',document.documentElement.getBoundingClientRect().top)
+        return true
+    } else {
+        background.style.display = 'block'
+        response.style.display = 'block'
+        let span = response.childNodes[1].childNodes[1]
+        response.childNodes[1].innerHTML = 'Ошибка';
+        response.childNodes[1].appendChild(span);
+        response.childNodes[3].innerHTML = 'Введите данные правильно'
+        return false;
+    }
 }
 function closeResponse() {
     sessionStorage.setItem('response',false)
@@ -33,7 +48,7 @@ window.onclick = function (event) {
 }
 window.onload = function(event) {
     if (sessionStorage.getItem('response')=='true') {
-        window.scrollTo(0,document.body.scrollHeight);
+        window.scrollTo(0,-parseInt(sessionStorage.getItem('height')));
         background.style.display = 'block'
         response.style.display = 'block'
     }

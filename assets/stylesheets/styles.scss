@@ -199,6 +199,8 @@ main {
     }
     .main__stages {
         .stages__desktop {
+            position: relative;
+            bottom: -4px;
             height: auto;
             width: 100%;
         }
@@ -460,6 +462,8 @@ main {
             border-radius: 15px;
             z-index: 2000;
             .response__title {
+                display: flex;
+                justify-content: space-between;
                 margin-bottom: 20px;
             }
             .response__close {
@@ -1017,9 +1021,14 @@ footer {
         }
         .main__windows {
             .windows__window {
-                .window__about {
+                .window__header {
+                    .window__title {
+                        font-size: 36px;
+                    }
+                }
+                >.window__about {
                     max-width: 850px;
-                    // padding: 0 60px 30px 60px;
+                    padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1074,8 +1083,11 @@ footer {
             }
         }
         .main__popularGoods {
-            max-height: 880px;
-            height: 1000px;
+            // max-height: 880px;
+            // height: 1000px;
+            max-height: fit-content;
+            height: fit-content;
+            padding-bottom: 30px;
             .popularGoods__carousel {
                 .carousel__content {
                     .carousel__textBlock {
@@ -1200,10 +1212,9 @@ footer {
         }
         .main__popularGoods {
             max-height: none;
-            height: 1000px;
             .popularGoods__carousel {
                 .carousel__button {
-                    margin-bottom: 180px;
+                    // margin-bottom: 180px;
                 }
                 .carousel__content {
                     flex-direction: column-reverse;
@@ -1214,6 +1225,7 @@ footer {
                         margin-top: 40px;
                         font-size: 20px;
                         align-items: center;
+                        font-size: 16px;
                         .carousel__price {
                             font-size: 24px;
                         }
@@ -1296,7 +1308,8 @@ footer {
         }
         .main__popularGoods {
             .popularGoods__title {
-                margin-top: 20px;
+                // margin-top: 20px;
+                padding-top: 20px;
                 font-size: 35px;
             }
         }
@@ -1305,6 +1318,12 @@ footer {
                 padding: 0 !important;
             }
             .windows__window {
+                .window__header {
+                    .window__title {
+                        font-size: 30px;
+                        max-width: 400px;
+                    }
+                }
                 .window__about {
                     max-width: 500px;
                     // padding: 0 60px 30px 60px;
@@ -1328,7 +1347,7 @@ footer {
                         padding-left: 55px;
                         margin-right: 0;
                         max-width: 100% ;
-                        font-size: 30px;
+                        font-size: 26px;
                     }
                     .window__price {
                         max-width: 120px;
@@ -1366,19 +1385,21 @@ footer {
             }
         }
         .main__popularGoods {
-            max-height: 700px;
-            .carousel__textBlock {
-                .carousel__list,
-                .carousel__description {
-                    font-size: $fontsize;
+            .carousel__content {
+                max-height: none;
+                .carousel__textBlock {
+                    .carousel__list,
+                    .carousel__description {
+                        font-size: $fontsize;
+                    }
+                    .carousel__price {
+                        font-size: $fontsize+4px !important;
+                    }
                 }
-                .carousel__price {
-                    font-size: $fontsize+4px !important;
+                .carousel__image {
+                    height: auto !important;
+                    width: 320px !important;
                 }
-            }
-            .carousel__image {
-                height: auto !important;
-                width: 320px !important;
             }
         }
         .main__questions {
@@ -1514,6 +1535,7 @@ footer {
         }
         .main__consultation {
             .consultation__title {
+                font-size: 26px;
                 text-align: center;
             }
             .consultation__form {
@@ -1553,7 +1575,7 @@ footer {
             .windows__window {
                 .window__header {
                     .window__title {
-                        font-size: 28px;
+                        font-size: 24px;
                         padding-left: 20px;
                     }
                 }
