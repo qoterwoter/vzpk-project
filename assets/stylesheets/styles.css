@@ -887,9 +887,9 @@ main .main__windows .windows__window .window__main .window__about .window__actio
 
 main .main__windows .windows__window .window__main .window__actions_mobile {
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   max-width: 61%;
 }
 
@@ -1269,10 +1269,11 @@ footer .footer__links .links__list .links__item::before {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main .main__windows .windows__window .window__about {
+  main .main__windows .windows__window > .window__about {
     max-width: 1000px;
+    padding: 0 60px 30px 60px;
   }
-  main .main__windows .windows__window .window__about .about__title {
+  main .main__windows .windows__window > .window__about .about__title {
     top: -35px;
   }
 }
@@ -1443,6 +1444,12 @@ footer .footer__links .links__list .links__item::before {
   }
 }
 
+@media (max-width: 1150px) {
+  main .main__windows .windows__window .window__about {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 1020px) {
   main .main__windows .windows__window .window__header .window__title {
     max-width: 70%;
@@ -1503,15 +1510,17 @@ footer .footer__links .links__list .links__item::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 0 auto;
   }
-  main .main__windows .windows__window .window__about {
-    max-width: 700px;
+  main .main__windows .windows__window > .window__about {
+    padding: 30px 60px;
+    max-width: 600px;
+    padding: 0 60px 30px 60px;
   }
-  main .main__windows .windows__window .window__about .about__title {
+  main .main__windows .windows__window > .window__about .about__title {
     top: -35px;
   }
   main .main__popularGoods {
@@ -1661,10 +1670,11 @@ footer .footer__links .links__list .links__item::before {
     height: auto;
     max-width: 340px;
   }
-  main .main__windows .windows__window .window__about {
+  main .main__windows .windows__window > .window__about {
     max-width: 400px;
+    padding: 0 60px 30px 60px;
   }
-  main .main__windows .windows__window .window__about .about__title {
+  main .main__windows .windows__window > .window__about .about__title {
     top: -35px;
   }
   main .main__popularGoods {
@@ -1856,10 +1866,11 @@ footer .footer__links .links__list .links__item::before {
     max-width: fit-content;
     padding: 12px 30px;
   }
-  main .main__windows .windows__window .window__about {
+  main .main__windows .windows__window > .window__about {
     max-width: 280px;
+    padding: 0 60px 30px 60px;
   }
-  main .main__windows .windows__window .window__about .about__title {
+  main .main__windows .windows__window > .window__about .about__title {
     top: -35px;
   }
   main .main__questions .questions__button {
@@ -1971,15 +1982,17 @@ footer .footer__links .links__list .links__item::before {
     max-width: 120px;
     font-size: 11px;
   }
-  main .main__windows .windows__window .window__about {
+  main .main__windows .windows__window > .window__about {
     max-width: 270px;
+    padding: 0 30px 30px 40px;
   }
-  main .main__windows .windows__window .window__about .about__title {
+  main .main__windows .windows__window > .window__about .about__title {
     left: -20px;
-    top: -35px;
+    top: -30px;
     font-size: 25px;
+    padding: 20px;
   }
-  main .main__windows .windows__window .window__about .about__list {
+  main .main__windows .windows__window > .window__about .about__list {
     font-size: 15px;
     line-height: 22px;
   }

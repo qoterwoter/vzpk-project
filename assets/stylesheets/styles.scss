@@ -604,7 +604,7 @@ main {
                 }
                 .window__actions_mobile {
                     display: none;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     max-width: 61%;
                     .window__button {
                         margin-bottom: 20px;
@@ -898,9 +898,9 @@ footer {
         }
         .main__windows {
             .windows__window {
-                .window__about {
+                >.window__about {
                     max-width: 1000px;
-                    // padding: 0 60px 30px 60px;
+                    padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1115,6 +1115,17 @@ footer {
     }
 
 }
+@media (max-width: 1150px) {
+    main {
+        .main__windows {
+            .windows__window {
+                .window__about {
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1020px) {
     main {
         .main__windows {
@@ -1173,13 +1184,14 @@ footer {
                         max-width: 90%;
                         width: 100%;
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-evenly;
                         margin: 0 auto;
                     }
                 }
-                .window__about {
-                    max-width: 700px;
-                    // padding: 0 60px 30px 60px;
+                >.window__about {
+                    padding: 30px 60px;
+                    max-width: 600px;
+                    padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1344,9 +1356,9 @@ footer {
                         }
                     }
                 }
-                .window__about {
+                >.window__about {
                     max-width: 400px;
-                    // padding: 0 60px 30px 60px;
+                    padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1580,9 +1592,9 @@ footer {
                         }
                     }
                 }
-                .window__about {
+                >.window__about {
                     max-width: 280px;
-                    // padding: 0 60px 30px 60px;
+                    padding: 0 60px 30px 60px;
                     .about__title {
                         top: -35px;
                     }
@@ -1731,13 +1743,14 @@ footer {
                         }
                     }
                 }
-                .window__about {
+                >.window__about {
                     max-width: 270px;
-                    // padding: 0 40px 30px 50px;
+                    padding: 0 30px 30px 40px;
                     .about__title {
                         left:-20px;
-                        top: -35px;
+                        top: -30px;
                         font-size: 25px;
+                        padding: 20px;
                     }
                     .about__list {
                         font-size: 15px;

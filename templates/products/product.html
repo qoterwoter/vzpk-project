@@ -118,14 +118,14 @@
                     </div>
                 </article>
             </section>
-            <div class="main__questions">
+            <!-- <div class="main__questions">
                 <div class="questions__titles">
                     <h2 class="titles__title">Остались вопросы? Мы вам перезвоним!</h2>
                     <h2 class="titles__title">Расчет стоимости в течение 15 минут</h2>
                 </div>
                 <input class="questions__button questions__phone" type="text" placeholder="+7 (___) ___-__-__">
                 <input class="questions__button button" type="submit" placeholder="Отправить">
-            </div>
+            </div> -->
             <div class="main__popularGoods popularGoods">
                 <h2 class="popularGoods__title">Популярные решения</h2>
                 <div class="popularGoods__carousel carousel">
@@ -181,13 +181,25 @@
                     <button class='carousel__button carousel__next' onclick="moveSlide(1)">></button>
                 </div>
             </div>
-            <div class="main__consultation consultation">
+            <div id='consultation__form' class="main__consultation consultation">
                 <h2 class="consultation__title">Бесплатная консультация</h2>
-                <form class="consultation__form" action="">
-                    <input class='consultation__input' type="email" placeholder="E-mail">
-                    <textarea class="consultation__comment" name="comment" id="" cols="30" rows="6" placeholder="Комментарий.."></textarea>
+                <form class="consultation__form" action method="" onsubmit="return showResponse(event)">
+                    <label class='consultation__label' for="email">Ваша почта:</label>
+                    <input class='consultation__input form__email' id='email' type="email" placeholder="ivan@ivanov.ru" required>
+                    <p class='consultation__or'>или</p>
+                    <label class='consultation__label' for="phone">Ваш номер телефона:</label>
+                    <input class="consultation__input form__phone" id='phone' type="text" placeholder="8 (123) 456-78-90" required>
+                    <label class='consultation__label' for="theme">Тема сообщения:</label>
+                    <input class='consultation__input form__theme' autocomplete="off" id='theme' type="text" name='theme' placeholder="Рассчитать стоимость.." >
+                    <label class='consultation__label' for="comment">Комментарий к сообщению:</label>
+                    <textarea class="consultation__comment" autocomplete="off" id='comment' name="comment" cols="30" rows="6" placeholder="Комментарий.." ></textarea>
                     <input class='button' type="submit" value="Отправить"> 
                 </form>
+                <div class="respone__background"></div>
+                <div class="consultation__response">
+                    <h2 class='response__title'>Сообщение отправлено! <span onclick="closeResponse();" class='response__close'>✕</span></h2>
+                    <p class='response__description'>Скоро мы с вами свяжемся.</p>
+                </div>
             </div>
         </main>     
         <footer class='footer'>
